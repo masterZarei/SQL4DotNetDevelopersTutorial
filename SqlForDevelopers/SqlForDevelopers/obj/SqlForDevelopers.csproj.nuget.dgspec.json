@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Projects\\SqlForDevelopers\\SqlForDevelopers\\SqlForDevelopers.csproj": {}
+    "F:\\Files\\Tutorials\\SQL4DotNetDevelopersTutorial\\SqlForDevelopers\\SqlForDevelopers\\SqlForDevelopers.csproj": {}
   },
   "projects": {
-    "F:\\Projects\\SqlForDevelopers\\SqlForDevelopers\\SqlForDevelopers.csproj": {
+    "F:\\Files\\Tutorials\\SQL4DotNetDevelopersTutorial\\SqlForDevelopers\\SqlForDevelopers\\SqlForDevelopers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Projects\\SqlForDevelopers\\SqlForDevelopers\\SqlForDevelopers.csproj",
+        "projectUniqueName": "F:\\Files\\Tutorials\\SQL4DotNetDevelopersTutorial\\SqlForDevelopers\\SqlForDevelopers\\SqlForDevelopers.csproj",
         "projectName": "SqlForDevelopers",
-        "projectPath": "F:\\Projects\\SqlForDevelopers\\SqlForDevelopers\\SqlForDevelopers.csproj",
+        "projectPath": "F:\\Files\\Tutorials\\SQL4DotNetDevelopersTutorial\\SqlForDevelopers\\SqlForDevelopers\\SqlForDevelopers.csproj",
         "packagesPath": "C:\\Users\\emza\\.nuget\\packages\\",
-        "outputPath": "F:\\Projects\\SqlForDevelopers\\SqlForDevelopers\\obj\\",
+        "outputPath": "F:\\Files\\Tutorials\\SQL4DotNetDevelopersTutorial\\SqlForDevelopers\\SqlForDevelopers\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

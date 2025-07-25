@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "k7dZvXUQYbI=",
+  "dgSpecHash": "inu/u1j2sEk=",
   "success": true,
-  "projectFilePath": "F:\\Projects\\SqlForDevelopers\\SqlForDevelopers\\SqlForDevelopers.csproj",
+  "projectFilePath": "F:\\Files\\Tutorials\\SQL4DotNetDevelopersTutorial\\SqlForDevelopers\\SqlForDevelopers\\SqlForDevelopers.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\emza\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\emza\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

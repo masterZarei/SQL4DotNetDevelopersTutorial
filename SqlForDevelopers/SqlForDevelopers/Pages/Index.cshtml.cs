@@ -15,7 +15,7 @@ namespace SqlForDevelopers.Pages
 
         public void OnGet()
         {
-            var posts = _context.Posts.ToList();
+            var posts = _context.Posts.OrderByDescending(c=>c.UserId).ToList();
         }
     }
 }
