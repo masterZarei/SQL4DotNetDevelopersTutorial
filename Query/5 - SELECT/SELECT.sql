@@ -1,0 +1,1 @@
+SELECT Title,UserId FROM Posts

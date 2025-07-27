@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Files\\Tutorials\\SQL4DotNetDevelopersTutorial\\SqlForDevelopers\\SqlForDevelopers\\SqlForDevelopers.csproj": {}
+    "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\SqlForDevelopers\\SqlForDevelopers\\SqlForDevelopers.csproj": {}
   },
   "projects": {
-    "F:\\Files\\Tutorials\\SQL4DotNetDevelopersTutorial\\SqlForDevelopers\\SqlForDevelopers\\SqlForDevelopers.csproj": {
+    "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\SqlForDevelopers\\SqlForDevelopers\\SqlForDevelopers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Files\\Tutorials\\SQL4DotNetDevelopersTutorial\\SqlForDevelopers\\SqlForDevelopers\\SqlForDevelopers.csproj",
+        "projectUniqueName": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\SqlForDevelopers\\SqlForDevelopers\\SqlForDevelopers.csproj",
         "projectName": "SqlForDevelopers",
-        "projectPath": "F:\\Files\\Tutorials\\SQL4DotNetDevelopersTutorial\\SqlForDevelopers\\SqlForDevelopers\\SqlForDevelopers.csproj",
+        "projectPath": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\SqlForDevelopers\\SqlForDevelopers\\SqlForDevelopers.csproj",
         "packagesPath": "C:\\Users\\emza\\.nuget\\packages\\",
-        "outputPath": "F:\\Files\\Tutorials\\SQL4DotNetDevelopersTutorial\\SqlForDevelopers\\SqlForDevelopers\\obj\\",
+        "outputPath": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\SqlForDevelopers\\SqlForDevelopers\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -90,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
