@@ -1,0 +1,4 @@
+SELECT * FROM customers
+WHERE CustomerName LIKE '_S%'
+-- {%} ZERO OR MORE CHARACTERS
+-- {_} AT LEATS ONE CHARACTER
