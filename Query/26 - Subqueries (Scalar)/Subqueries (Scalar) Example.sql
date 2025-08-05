@@ -17,3 +17,13 @@ WHERE CustomerID = (SELECT CustomerID FROM Customers WHERE CustomerID = 5);
 -- 5. Get the price of the product named 'Chang'.
 SELECT Price FROM Products
 WHERE ProductID = (SELECT ProductID FROM Products WHERE ProductName = 'Chang');
+
+-- 6. Find all employees who were born in the same year as the employee with ID = 8 (excluding employee 8)
+SELECT *
+FROM employees
+WHERE Year(BirthDate) = (
+    SELECT Year(BirthDate)
+    FROM employees
+    WHERE EmployeeID = 8
+)
+AND EmployeeID <> 8;
