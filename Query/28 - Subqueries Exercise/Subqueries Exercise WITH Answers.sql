@@ -1,14 +1,14 @@
---List all customers who live in the same city as the customer named 'Thomas Hardy'.
+--List all customers who live in the same city as the customer ContactName is 'Thomas Hardy'.
 SELECT * FROM customers
 WHERE City = (
     SELECT City FROM customers WHERE ContactName = 'Thomas Hardy'
 )
 AND ContactName <> 'Thomas Hardy';
 
---Find customers who are from a country where at least one employee also lives.
+--Find customers who are from a country where at least one supplier also lives.
 SELECT * FROM customers
 WHERE Country IN (
-    SELECT DISTINCT Country FROM employees
+    SELECT DISTINCT Country FROM suppliers
     WHERE Country IS NOT NULL
 );
 
