@@ -1,9 +1,9 @@
--- 1. Show all customers, even if they have no orders
+-- 1. Show all customers with their OrderID, even if they have no orders
 SELECT Customers.CustomerName, Orders.OrderID
 FROM Customers
 LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID;
 
--- 2. Show all products, even if they have never been sold
+-- 2. Show all products with their quantity sold, even if they have never been sold
 SELECT Products.ProductName, order_details.Quantity
 FROM Products
 LEFT JOIN order_details ON Products.ProductID = order_details.ProductID;
