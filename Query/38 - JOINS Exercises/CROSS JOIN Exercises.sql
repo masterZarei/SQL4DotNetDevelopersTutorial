@@ -1,3 +1,5 @@
+-- CROSS JOIN
+
 -- Show all combinations of employees and shippers
 
 -- Show all combinations of categories and suppliers
