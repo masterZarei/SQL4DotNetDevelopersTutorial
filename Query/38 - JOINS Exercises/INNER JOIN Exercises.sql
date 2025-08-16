@@ -1,3 +1,5 @@
+-- INNER JOIN
+
 -- 1. Show all customers who have placed at least one order 
 --(list their names and OrderID).
 
