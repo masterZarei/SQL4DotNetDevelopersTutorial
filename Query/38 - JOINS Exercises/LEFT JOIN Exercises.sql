@@ -1,3 +1,5 @@
+-- LEFT JOIN
+
 -- 1. Show all customers and their orders (customers with no orders should appear with NULL OrderID).
 
 -- 2. Show all products and the quantity sold (products never sold should show NULL).
