@@ -1,3 +1,5 @@
+--RIGHT JOIN
+
 -- 1. Show all orders with customer names 
 --(include orders even if the customer info is missing).
 
