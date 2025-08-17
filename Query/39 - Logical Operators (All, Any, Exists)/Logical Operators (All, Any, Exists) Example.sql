@@ -1,25 +1,16 @@
---TRUE if all of the subquery values meet the condition	
-SELECT ProductName 
+﻿-- Find products that are cheaper than ANY product supplied by supplier 1
+SELECT ProductName, Price
 FROM Products
-WHERE ProductID = ALL
-(SELECT ProductID FROM order_details WHERE Quantity = 10);
+WHERE Price < ANY (SELECT Price FROM Products WHERE SupplierID = 1);
+--اگر یه محصول از حداقل یکی از محصولات تأمین‌کننده 1 ارزون‌تر باشه → انتخاب میشه.
 
-SELECT SupplierName
-FROM Suppliers
-WHERE EXISTS 
-(SELECT ProductName FROM Products 
-WHERE Products.SupplierID = Suppliers.supplierID AND Price < 20);
-
-SELECT ProductName
+-- Find products that are cheaper than ALL products supplied by supplier 1
+SELECT ProductName, Price
 FROM Products
-WHERE ProductID = ANY
-  (SELECT ProductID
-  FROM order_details
-  WHERE Quantity = 10);
+WHERE Price < ALL (SELECT Price FROM Products WHERE SupplierID = 1);
+-- فقط محصولاتی انتخاب میشن که از همه‌ی محصولات تأمین‌کننده 1 ارزون‌تر باشن → یعنی ارزون‌ترین ارزون‌ها!
 
-  SELECT ProductName
-FROM Products
-WHERE ProductID = ANY
-  (SELECT ProductID
-  FROM order_details
-  WHERE Quantity > 1000);
+-- Find customers who have placed at least one order
+SELECT CustomerName
+FROM Customers
+WHERE EXISTS (SELECT * FROM Orders WHERE Orders.CustomerID = Customers.CustomerID);
