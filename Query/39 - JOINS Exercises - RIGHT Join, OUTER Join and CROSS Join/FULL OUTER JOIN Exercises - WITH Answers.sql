@@ -1,3 +1,5 @@
+-- FULL OUTER JOIN WITH ANSWERS
+
 -- 1. Show all customers and all orders
 --(customers with no orders and orders without valid customer should both appear).
 SELECT Customers.CustomerName, Orders.OrderID
