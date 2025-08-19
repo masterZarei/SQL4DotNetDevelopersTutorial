@@ -1,16 +1,16 @@
--- CROSS JOIN WITH ANSWERS
+-- CROSS JOIN
 
 -- Show all combinations of employees and shippers
-SELECT Employees.FirstName, Shippers.ShipperName
-FROM Employees
-CROSS JOIN Shippers;
+SELECT employees.FirstName, shippers.ShipperName
+FROM employees
+CROSS JOIN shippers
 
 -- Show all combinations of categories and suppliers
-SELECT Categories.CategoryName, Suppliers.Country
-FROM Categories
-CROSS JOIN Suppliers;
+SELECT categories.CategoryName, suppliers.Country
+FROM categories
+CROSS JOIN suppliers
 
 -- Show all combinations of customers and products
-SELECT Customers.CustomerName, Products.ProductName
-FROM Customers
-CROSS JOIN Products;
+SELECT customers.ContactName, products.ProductName
+FROM customers
+CROSS JOIN products
