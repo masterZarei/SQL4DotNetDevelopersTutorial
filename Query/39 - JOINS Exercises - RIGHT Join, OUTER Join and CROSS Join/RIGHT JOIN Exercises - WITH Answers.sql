@@ -1,3 +1,5 @@
+-- RIGHT JOIN WITH ANSWERS
+
 -- 1. Show all orders with customer names 
 --(include orders even if the customer info is missing).
 SELECT Orders.OrderID, Customers.CustomerName
