@@ -1,3 +1,5 @@
+-- CROSS JOIN WITH ANSWERS
+
 -- Show all combinations of employees and shippers
 SELECT Employees.FirstName, Shippers.ShipperName
 FROM Employees
