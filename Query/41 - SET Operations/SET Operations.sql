@@ -1,0 +1,25 @@
+-- UNION
+SELECT City FROM Customers
+UNION
+SELECT City FROM Suppliers
+ORDER BY City;
+
+-- UNION ALL
+SELECT City FROM Customers
+UNION ALL
+SELECT City FROM Suppliers
+ORDER BY City;
+
+-- INTERSECT
+SELECT City
+FROM Customers
+INTERSECT
+SELECT City
+FROM Suppliers;
+
+-- EXCEPT
+SELECT CustomerID
+FROM customers
+EXCEPT
+SELECT CustomerID
+FROM orders
