@@ -1,25 +1,21 @@
--- UNION
-SELECT City FROM Customers
+-- UNION: Combine cities from Customers and Suppliers, removing duplicates
+SELECT CITY FROM customers
 UNION
-SELECT City FROM Suppliers
+SELECT CITY FROM suppliers
 ORDER BY City;
 
--- UNION ALL
-SELECT City FROM Customers
+-- UNION ALL: Combine cities from Customers and Suppliers, keeping duplicates
+SELECT CITY FROM customers
 UNION ALL
-SELECT City FROM Suppliers
+SELECT CITY FROM suppliers
 ORDER BY City;
 
--- INTERSECT
-SELECT City
-FROM Customers
+-- INTERSECT: Return only the cities that exist in both Customers and Suppliers
+SELECT CITY FROM customers
 INTERSECT
-SELECT City
-FROM Suppliers;
+SELECT CITY FROM suppliers;
 
--- EXCEPT
-SELECT CustomerID
-FROM customers
+-- EXCEPT: Return customers who never placed an order
+SELECT customers.CustomerID FROM customers
 EXCEPT
-SELECT CustomerID
-FROM orders
+SELECT orders.CustomerID FROM orders;
