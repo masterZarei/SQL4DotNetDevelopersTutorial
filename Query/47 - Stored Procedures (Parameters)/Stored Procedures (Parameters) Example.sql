@@ -1,32 +1,32 @@
--- 1. Get orders by customer ID
-CREATE PROCEDURE GetOrdersByCustomerID
-@CustomerID INT
+-- Get orders by customer ID
+CREATE PROC GetOrdersByCustomerID
+@CustomerId INT
 AS
 BEGIN
-    SELECT * FROM Orders WHERE CustomerID = @CustomerID;
+	SELECT * FROM ORDERS WHERE CustomerID = @CustomerId
 END;
 
--- 2. Get products more expensive than a price
-CREATE PROCEDURE GetProductsAbovePrice
+EXEC GetOrdersByCustomerID 9;
+
+-- Get products more expensive than a price
+CREATE PROC GetProductsAbovePrice
 @MinPrice float
 AS
 BEGIN
-    SELECT * FROM Products WHERE Price > @MinPrice;
+	SELECT * FROM PRODUCTS
+	WHERE Price > @MinPrice
 END;
 
--- 3. Get customer info by city
-CREATE PROCEDURE GetCustomersByCity 
-@City NVARCHAR(50)
+EXEC GetProductsAbovePrice 15
+
+-- Get products in a specific category
+CREATE PROC GetProductsByCategoryName
+@CategoryName nvarchar(255)
 AS
 BEGIN
-    SELECT * FROM Customers WHERE City = @City;
+	SELECT * FROM products
+	INNER JOIN categories ON products.CategoryID = categories.CategoryID
+	WHERE CategoryName = @CategoryName
 END;
 
-
--- 4. Get products in a specific category
-CREATE PROCEDURE GetProductsByCategory 
-@CategoryID INT
-AS
-BEGIN
-    SELECT * FROM Products WHERE CategoryID = @CategoryID;
-END;
+EXEC GetProductsByCategoryName 'Seafood'
