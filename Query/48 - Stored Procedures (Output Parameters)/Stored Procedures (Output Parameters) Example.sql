@@ -1,36 +1,32 @@
 -- 1. Get total number of orders for a customer
-CREATE PROCEDURE GetOrderCountByCustomer 
-@CustomerID INT,
+CREATE PROC GetOrderCountByCustomerId
+@CustomerId INT,
 @TotalOrders INT OUTPUT
 AS
 BEGIN
-    SELECT @TotalOrders = COUNT(*)
-    FROM Orders WHERE CustomerID = @CustomerID;
-END;
+	SELECT @TotalOrders = COUNT(*) FROM orders
+	WHERE CustomerID = @CustomerId
+END
+
+Declare @tl INT
+EXEC GetOrderCountByCustomerId 5, @tl OUTPUT
+Select @tl
 
 -- 2. Return highest product price
-CREATE PROCEDURE GetMaxProductPrice 
+CREATE PROC GetMaxProductPrice
 @MaxPrice float OUTPUT
 AS
 BEGIN
-    SELECT @MaxPrice = MAX(Price) FROM Products;
-END;
+	SELECT @MaxPrice = MAX(PRICE) FROM PRODUCTS
+END
 
--- 3. Return average product price
-CREATE PROCEDURE GetAverageProductPrice 
-@AvgPrice float OUTPUT
+-- 3. Return 1 if customer exists, 0 if not
+CREATE PROC CheckIfCustomerExists
+@CustomerId INT
 AS
 BEGIN
-    SELECT @AvgPrice = AVG(Price) FROM Products;
-END;
-
--- 4. Return 1 if customer exists, 0 if not
-CREATE PROCEDURE CheckCustomerExists 
-@CustomerID INT
-AS
-BEGIN
-    IF EXISTS(SELECT 1 FROM Customers WHERE CustomerID = @CustomerID)
-        RETURN 1;
-    ELSE
-        RETURN 0;
-END;
+	IF EXISTS(SELECT 1 FROM customers WHERE CustomerID = @CustomerId)
+		RETURN 1;
+	ELSE
+		RETURN 0;
+END
