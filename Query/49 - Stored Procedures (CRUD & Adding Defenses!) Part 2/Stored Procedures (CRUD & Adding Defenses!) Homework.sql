@@ -10,7 +10,8 @@ BEGIN
 END;
 
 -- READ
-CREATE PROCEDURE GetProductByID @ProductID INT
+CREATE PROCEDURE GetProductByID
+@ProductID INT
 AS
 BEGIN
     SELECT * FROM Products WHERE ProductID = @ProductID;
@@ -26,7 +27,8 @@ BEGIN
 END;
 
 -- DELETE
-CREATE PROCEDURE DeleteProduct @ProductID INT
+CREATE PROCEDURE DeleteProduct 
+@ProductID INT
 AS
 BEGIN
     DELETE FROM Products WHERE ProductID = @ProductID;
