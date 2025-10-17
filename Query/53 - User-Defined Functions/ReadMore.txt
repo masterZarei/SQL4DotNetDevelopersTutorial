@@ -1,0 +1,1 @@
+https://docs.snowflake.com/en/developer-guide/stored-procedures-vs-udfs
