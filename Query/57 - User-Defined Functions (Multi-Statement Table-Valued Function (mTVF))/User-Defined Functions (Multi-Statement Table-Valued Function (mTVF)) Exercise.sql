@@ -1,80 +1,71 @@
---Purpose: Returns total quantity and total sales amount for each product
-CREATE FUNCTION fn_GetProductSalesSummary_mTVF()
+--Returns total order quantity and total spent amount for each Customer
+CREATE FUNCTION fn_GetCustomerOrderSummary()
 RETURNS @Result TABLE
 (
-    ProductID INT,
-    ProductName NVARCHAR(100),
-    TotalQuantity INT,
-    TotalSales DECIMAL(18,2)
+	CustomerId INT,
+	CustomerName NVARCHAR(255),
+	TotalOrders INT,
+	TotalSpent float
 )
 AS
 BEGIN
-    -- Insert aggregated data (sales info) into the result table
-    INSERT INTO @Result
-    SELECT 
-        p.ProductID,
-        p.ProductName,
-        SUM(od.Quantity) AS TotalQuantity,
-        SUM(od.Quantity * p.Price) AS TotalSales
-    FROM Products p
-    LEFT JOIN Order_Details od ON p.ProductID = od.ProductID
-    GROUP BY p.ProductID, p.ProductName;
+	INSERT INTO @Result
+	SELECT c.CustomerID, c.ContactName, COUNT(o.OrderId), SUM(od.Quantity * p.Price)
+	FROM customers c
+	LEFT JOIN orders o ON o.CustomerID = c.CustomerID
+	LEFT JOIN order_details od ON od.OrderID = o.OrderID
+	LEFT JOIN products p ON p.ProductID = od.ProductID
+	GROUP BY c.CustomerID, c.ContactName
 
-    -- Return the final result set
-    RETURN;
-END;
+	RETURN;
+END
 
---Usage:
-SELECT * FROM dbo.fn_GetProductSalesSummary_mTVF();
-
-
+SELECT * FROM dbo.fn_GetCustomerOrderSummary()
 
 --Returns all orders with total price above a threshold
-CREATE FUNCTION fn_GetOrdersAboveAmount (@MinAmount DECIMAL(10,2))
+CREATE FUNCTION fn_GetOrdersAboveAmount(@MinAmount float)
 RETURNS @Orders TABLE
 (
-    OrderID INT,
-    CustomerID INT,
-    TotalAmount DECIMAL(18,2)
+	OrderId INT,
+	CustomerId INT,
+	TotalAmount float
 )
 AS
 BEGIN
-    INSERT INTO @Orders
-    SELECT o.OrderID, o.CustomerID, SUM(od.Quantity * p.Price)
-    FROM Orders o
-    JOIN Order_Details od ON o.OrderID = od.OrderID
-    JOIN Products p ON od.ProductID = p.ProductID
-    GROUP BY o.OrderID, o.CustomerID
-    HAVING SUM(od.Quantity * p.Price) > @MinAmount;
+	INSERT @Orders
+	SELECT o.OrderID, o.CustomerID, SUM(od.Quantity * p.Price)
+	FROM orders o
+    JOIN order_details od ON od.OrderID = o.OrderID
+    JOIN products p ON p.ProductID = od.ProductID
+	GROUP BY o.OrderID, o.CustomerID
+	HAVING SUM(od.Quantity * p.Price) > @MinAmount
 
-    RETURN;
-END;
+	RETURN;
+END
 
--- Usage:
-SELECT * FROM dbo.fn_GetOrdersAboveAmount(500);
+SELECT * FROM dbo.fn_GetOrdersAboveAmount(2000)
 
--- Purpose: Classify each product into 'Low', 'Medium', or 'High' price category
+--Classify each product into 'Low', 'Medium', or 'High' price category
 CREATE FUNCTION fn_ClassifyProducts()
 RETURNS @Products TABLE
 (
-    ProductID INT,
-    ProductName NVARCHAR(100),
-    Price DECIMAL(10,2),
-    Category NVARCHAR(10)
+	ProductId INT,
+	ProductName NVARCHAR(255),
+	Price float,
+	Category NVARCHAR(10)
 )
 AS
 BEGIN
-    INSERT INTO @Products
-    SELECT ProductID, ProductName, Price,
-           CASE 
-               WHEN Price < 20 THEN 'Low'
-               WHEN Price BETWEEN 20 AND 50 THEN 'Medium'
-               ELSE 'High'
-           END
-    FROM Products;
+	INSERT INTO @Products
+	SELECT ProductID, ProductName, Price,
+		CASE
+			WHEN Price < 20 THEN 'LOW'
+			WHEN Price BETWEEN 20 AND 50 THEN 'MEDIUM'
+			ELSE 'HIGH'
+		END
+	FROM products
 
-    RETURN;
-END;
+	RETURN;
+END
 
--- Usage:
-SELECT * FROM dbo.fn_ClassifyProducts();
+SELECT * FROM dbo.fn_ClassifyProducts()
