@@ -1,31 +1,32 @@
---Returns a list of customers with their total orders and total spent
-CREATE FUNCTION fn_GetCustomerOrderSummary_mTVF()
+--Purpose: Returns total quantity and total sales amount for each product
+CREATE FUNCTION fn_GetProductSalesSummary_mTVF()
 RETURNS @Result TABLE
 (
-    CustomerID INT,
-    CustomerName NVARCHAR(100),
-    TotalOrders INT,
-    TotalAmount DECIMAL(18,2)
+    ProductID INT,
+    ProductName NVARCHAR(100),
+    TotalQuantity INT,
+    TotalSales DECIMAL(18,2)
 )
 AS
 BEGIN
+    -- Insert aggregated data (sales info) into the result table
     INSERT INTO @Result
     SELECT 
-        c.CustomerID,
-        c.CustomerName,
-        COUNT(o.OrderID),
-        SUM(od.Quantity * p.Price)
-    FROM Customers c
-    LEFT JOIN Orders o ON c.CustomerID = o.CustomerID
-    LEFT JOIN Order_Details od ON o.OrderID = od.OrderID
-    LEFT JOIN Products p ON od.ProductID = p.ProductID
-    GROUP BY c.CustomerID, c.CustomerName;
+        p.ProductID,
+        p.ProductName,
+        SUM(od.Quantity) AS TotalQuantity,
+        SUM(od.Quantity * p.Price) AS TotalSales
+    FROM Products p
+    LEFT JOIN Order_Details od ON p.ProductID = od.ProductID
+    GROUP BY p.ProductID, p.ProductName;
 
+    -- Return the final result set
     RETURN;
 END;
 
--- Usage:
-SELECT * FROM dbo.fn_GetCustomerOrderSummary_mTVF();
+--Usage:
+SELECT * FROM dbo.fn_GetProductSalesSummary_mTVF();
+
 
 
 --Returns all orders with total price above a threshold
