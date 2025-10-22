@@ -1,0 +1,2 @@
+CREATE NONCLUSTERED INDEX IX_SalesTeam_NationalCode
+On SalesTeam(NationalCode)

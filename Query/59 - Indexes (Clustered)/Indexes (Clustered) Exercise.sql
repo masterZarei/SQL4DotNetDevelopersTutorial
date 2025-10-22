@@ -1,0 +1,2 @@
+CREATE CLUSTERED INDEX IX_SalesTeam_Id
+ON SalesTeam(Id)
