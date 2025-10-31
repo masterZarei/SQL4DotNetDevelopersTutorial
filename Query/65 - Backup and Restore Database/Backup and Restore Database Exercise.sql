@@ -1,0 +1,6 @@
+BACKUP DATABASE Sql4DevsDb
+TO DISK = 'F:\DbBackup\Sql4DevsDb.bak'
+WITH DIFFERENTIAL
+
+RESTORE DATABASE Sql4DevsDb
+FROM DISK = 'F:\DbBackup\Sql4DevsDb.bak'

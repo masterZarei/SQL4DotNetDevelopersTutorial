@@ -1,3 +1,0 @@
-BACKUP DATABASE Sql4DevsDb
-TO DISK = 'F:\DbBackup\TopShopDb.bak'
-WITH DIFFERENTIAL;
