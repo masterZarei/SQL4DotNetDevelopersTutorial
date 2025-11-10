@@ -1,80 +1,68 @@
--- Create a log table to store customer insert actions
-CREATE TABLE CustomerLog (
-    LogID INT IDENTITY PRIMARY KEY,       
-    CustomerID INT,                       
-    Action NVARCHAR(50),                  
-    ActionDate DATETIME DEFAULT GETDATE() 
+-- Log table to record customer actions (e.g. insert)
+CREATE TABLE CustomerLog(
+	LogId INT PRIMARY KEY IDENTITY,
+	CustomerId INT,
+	[Action] NVARCHAR(255),
+	ActionDate DATETIME DEFAULT GETDATE()
 );
 
--- Trigger to automatically log when a new customer is inserted
+-- Trigger: logs a record after a new customer is inserted
 CREATE TRIGGER trg_AfterCustomerInsert
 ON Customers
 AFTER INSERT
 AS
 BEGIN
-    INSERT INTO CustomerLog (CustomerID, Action)
-    SELECT CustomerID, 'INSERT' FROM inserted; 
+	INSERT INTO CustomerLog(CustomerId, [Action])
+	SELECT CustomerId, 'INSERT' FROM inserted;
 END;
 
--- Test trigger by adding a new customer
-INSERT INTO Customers (CustomerName, City)
-VALUES ('Alex Brown', 'Paris');
+-- Test insert to fire the trigger
+INSERT INTO Customers (ContactName, City)
+VALUES('Mohammad', 'Shiraz');
 
--- View log table data
-SELECT * FROM CustomerLog;
-
-
-
--- Create a table to track product price changes
-CREATE TABLE ProductPriceHistory (
-    HistoryID INT IDENTITY PRIMARY KEY,       
-    ProductID INT,                            
-    OldPrice DECIMAL(10,2),                   
-    NewPrice DECIMAL(10,2),                   
-    ChangeDate DATETIME DEFAULT GETDATE()     
+-- Table to store product price change history
+CREATE TABLE ProductPriceHistory(
+	HistoryId INT PRIMARY KEY IDENTITY,
+	ProductId INT,
+	OldPrice FLOAT,
+	NewPrice FLOAT,
+	ChangeDate DATETIME DEFAULT GETDATE()
 );
 
--- Trigger to log price updates on Products table
+-- Trigger: logs old and new prices when product price is updated
 CREATE TRIGGER trg_ProductPriceUpdate
 ON Products
 AFTER UPDATE
 AS
 BEGIN
-    INSERT INTO ProductPriceHistory (ProductID, OldPrice, NewPrice)
-    SELECT d.ProductID, d.Price, i.Price
-    FROM deleted d
-    JOIN inserted i ON d.ProductID = i.ProductID
-    WHERE d.Price <> i.Price; -- Only log if price actually changed
+	INSERT INTO ProductPriceHistory(ProductId, OldPrice, NewPrice)
+	SELECT d.ProductId, d.Price, i.Price
+	FROM deleted d
+	JOIN inserted i ON d.ProductID = i.ProductID
+	WHERE d.Price <> i.Price;
 END;
 
--- Test trigger by updating product prices
-UPDATE Products SET Price = Price + 10 WHERE ProductID = 1;
-
--- View price change history
-SELECT * FROM ProductPriceHistory;
-
-
-
--- Trigger to prevent customer deletions (blocks DELETE action)
+-- Trigger: prevents any deletion from Customers table
 CREATE TRIGGER trg_PreventCustomerDeletion
 ON Customers
 INSTEAD OF DELETE
 AS
 BEGIN
-    PRINT 'Customers cannot be deleted!'; -- Notify attempt to delete
+	PRINT 'Customers cannot be deleted';
 END;
 
--- Test delete prevention
-DELETE FROM Customers WHERE CustomerName = 'Elizabeth Lincoln';
+-- Test delete to fire prevention trigger
+DELETE FROM Customers;
 
-
-
--- Database-level trigger to prevent table deletion
+-- Database-level trigger: blocks table deletion across the database
 CREATE TRIGGER trg_BlockTableDrop
 ON DATABASE
 FOR DROP_TABLE
 AS
 BEGIN
-    PRINT 'Dropping tables is not allowed in this database.';
-    ROLLBACK; -- Cancel the DROP operation
+	PRINT 'Dropping tables are not allowed in this Database';
+	ROLLBACK;
 END;
+
+-- Test database-level trigger
+DROP TABLE Products;
