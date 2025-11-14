@@ -1,17 +1,16 @@
-﻿-- 1️⃣ Create a master key
-CREATE MASTER KEY ENCRYPTION BY PASSWORD = 'MyTDEMasterKey@2025';
+CREATE MASTER KEY ENCRYPTION BY PASSWORD = 'MyStrongPassword@2025'
+OPEN MASTER KEY DECRYPTION BY PASSWORD = 'MyStrongPassword@2025'
 
--- 2️⃣ Create a certificate to protect database encryption key
-CREATE CERTIFICATE MyTDECert WITH SUBJECT = 'TDE Certificate';
+CREATE CERTIFICATE MyTDECert
+WITH SUBJECT = 'Encrypt Db Files'
 
--- 3️⃣ Create a database encryption key and protect it with certificate
-USE TopTest;
+USE TopTest
 CREATE DATABASE ENCRYPTION KEY
 WITH ALGORITHM = AES_256
-ENCRYPTION BY SERVER CERTIFICATE MyTDECert;
+ENCRYPTION BY SERVER CERTIFICATE MyTDECert
 
--- 4️⃣ Enable encryption on the database
-ALTER DATABASE TopTest SET ENCRYPTION ON;
+ALTER DATABASE TopTest
+SET ENCRYPTION ON
 
--- 5️⃣ To verify
-SELECT name, is_encrypted FROM sys.databases;
+
+SELECT name, is_encrypted from sys.databases
