@@ -23,7 +23,7 @@ namespace SqlForDevelopers.Pages
             /*List<Post> posts = _context.Posts
             .Where(c => EF.Functions.Like(c.Title, "a%"))
             .ToList();*/
-            var users = _context.Users.FromSqlRaw("exec GetUserById 5");
+            var posts = _context.Posts.ToList();
         }
     }
 }
