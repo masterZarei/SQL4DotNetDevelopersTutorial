@@ -25,6 +25,7 @@ CREATE TABLE Books(
 CREATE TABLE Users(
 	Id INT PRIMARY KEY Identity,
 	FullName NVARCHAR(500) Not Null,
+	Password NVARCHAR(MAX) NOT NULL,
 	PhoneNumber NVARCHAR(13) Not Null,
 	RoleId INT,
 	IsDeleted bit NOT NULL DEFAULT 0,
