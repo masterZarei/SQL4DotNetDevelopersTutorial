@@ -3,16 +3,16 @@ CREATE DATABASE DigitalLibraryDb
 USE DigitalLibraryDb
 
 CREATE TABLE Categories(
-	Id INT PRIMARY KEY Identity,
-	Title NVARCHAR(255) Not Null
+	Id INT PRIMARY KEY IDENTITY,
+	Title NVARCHAR(255) NOT NULL
 )
-Create TABLE Roles(
-	Id INT PRIMARY KEY Identity,
-	Title NVARCHAR(255) Not Null
+CREATE TABLE Roles(
+	Id INT PRIMARY KEY IDENTITY,
+	Title NVARCHAR(255) NOT NULL
 )
 CREATE TABLE Books(
-	Id INT PRIMARY KEY Identity,
-	Title NVARCHAR(255) Not Null,
+	Id INT PRIMARY KEY IDENTITY,
+	Title NVARCHAR(255) NOT NULL,
 	[Description] NVARCHAR(MAX),
 	ImageUrl NVARCHAR(MAX),
 	FileUrl NVARCHAR(MAX),
@@ -20,23 +20,25 @@ CREATE TABLE Books(
 	CategoryId INT,
 	IsDeleted bit NOT NULL DEFAULT 0,
 	CONSTRAINT FK_Books_Categories FOREIGN KEY (CategoryId)
-	REFERENCES Categories(Id)
+		REFERENCES Categories(Id)
 )
 CREATE TABLE Users(
-	Id INT PRIMARY KEY Identity,
-	FullName NVARCHAR(500) Not Null,
-	Password NVARCHAR(MAX) NOT NULL,
-	PhoneNumber NVARCHAR(13) Not Null,
+	Id INT PRIMARY KEY IDENTITY,
+	FullName NVARCHAR(255) NOT NULL,
+	PhoneNumber NVARCHAR(11) NOT NULL,
+	[Password] NVARCHAR(MAX) NOT NULL,
 	RoleId INT,
 	IsDeleted bit NOT NULL DEFAULT 0,
 	CONSTRAINT FK_Users_Roles FOREIGN KEY (RoleId)
-	REFERENCES Roles(Id),
+		REFERENCES Roles(Id),
 	CONSTRAINT UQ_Users_PhoneNumber UNIQUE (PhoneNumber)
 )
 CREATE TABLE DownloadedBooks(
-	Id INt PRIMARY KEY IDENTITY,
+	Id INT PRIMARY KEY IDENTITY,
 	BookId INT,
 	UserId INT,
-	CONSTRAINT FK_DownloadedBooks_Books FOREIGN KEY (BookId) REFERENCES Books(Id),
-	CONSTRAINT FK_DownloadedBooks_Users FOREIGN KEY (UserId) REFERENCES Users(Id)
+	CONSTRAINT FK_DownloadedBooks_Users FOREIGN KEY (UserId) 
+		REFERENCES Users(Id),
+	CONSTRAINT FK_DownloadedBooks_Books FOREIGN KEY (BookId) 
+		REFERENCES Books(Id)
 )
