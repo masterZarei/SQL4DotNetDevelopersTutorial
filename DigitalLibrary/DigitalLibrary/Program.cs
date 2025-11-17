@@ -1,3 +1,5 @@
+using DigitalLibrary.Data;
+using DigitalLibrary.Data.Repositories;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.Data.SqlClient;
 
@@ -13,6 +15,11 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     });
 
 builder.Services.AddSingleton(sp => new SqlConnection(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddScoped<ISqlDataContext, SqlDataContext>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<IRoleRepository, RoleRepository>();
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
