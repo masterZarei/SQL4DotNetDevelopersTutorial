@@ -8,17 +8,17 @@ namespace DigitalLibrary.Pages
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
-        private readonly IRoleRepository roleRepository;
+        private readonly IBookRepository bookRepository;
 
-        public IndexModel(ILogger<IndexModel> logger, IRoleRepository roleRepository)
+        public IndexModel(ILogger<IndexModel> logger, IBookRepository bookRepository)
         {
             _logger = logger;
-            this.roleRepository = roleRepository;
+            this.bookRepository = bookRepository;
         }
 
         public async Task<IActionResult> OnGet()
         {
-            var list = await roleRepository.GetAllAsync();
+            var list = await bookRepository.GetAllAsync();
 
             return Page();
         }
