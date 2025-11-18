@@ -18,6 +18,7 @@ builder.Services.AddSingleton(sp => new SqlConnection(builder.Configuration.GetC
 builder.Services.AddScoped<ISqlDataContext, SqlDataContext>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IBookRepository, BookRepository>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 
 var app = builder.Build();

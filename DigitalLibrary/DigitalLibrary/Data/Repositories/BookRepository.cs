@@ -45,7 +45,6 @@ namespace DigitalLibrary.Data.Repositories
         public async Task<int> AddAsync(BookDto dto)
         {
             var result = await _dataContext.ExecuteScalarAsync("sp_AddBook", CommandType.StoredProcedure,
-                 new SqlParameter("@Id", dto.Id),
                 new SqlParameter("@Title", dto.Title),
                 new SqlParameter("@Description", (object?)dto.Description ?? DBNull.Value),
                 new SqlParameter("@ImageUrl", (object?)dto.ImageUrl ?? DBNull.Value),
