@@ -1,6 +1,11 @@
-wwwroot\css\site.css
+wwwroot\Assets\Js\jquery-3.3.1.min.js
+wwwroot\Assets\Js\LightSlider.js
+wwwroot\Assets\Js\lightslider.min.js
+wwwroot\Assets\styles\input.css
+wwwroot\Assets\styles\lightslider.min.css
+wwwroot\Assets\styles\output.css
+wwwroot\Assets\styles\styles.css
 wwwroot\favicon.ico
-wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
@@ -61,9 +66,9 @@ wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
-F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\wwwroot\css\site.css
+F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\wwwroot\Assets\Js\LightSlider.js
 F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\wwwroot\favicon.ico
-F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\wwwroot\js\site.js
+F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\wwwroot\Assets\Js\jquery-3.3.1.min.js
 F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
 F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
@@ -123,3 +128,8 @@ F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\wwwroot\
 F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\wwwroot\lib\jquery\dist\jquery.slim.min.js
 F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\wwwroot\lib\jquery\dist\jquery.slim.min.map
 F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\wwwroot\lib\jquery\LICENSE.txt
+F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\wwwroot\Assets\Js\lightslider.min.js
+F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\wwwroot\Assets\styles\input.css
+F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\wwwroot\Assets\styles\lightslider.min.css
+F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\wwwroot\Assets\styles\output.css
+F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\wwwroot\Assets\styles\styles.css

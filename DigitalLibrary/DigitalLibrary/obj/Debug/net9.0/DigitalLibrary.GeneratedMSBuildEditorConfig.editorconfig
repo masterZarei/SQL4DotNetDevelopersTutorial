@@ -20,6 +20,26 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
+[F:/Toturials/SQL4DotNetDevelopersTutorial/DigitalLibrary/DigitalLibrary/Pages/Account/Admin/Categories/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxBZG1pblxDYXRlZ29yaWVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Toturials/SQL4DotNetDevelopersTutorial/DigitalLibrary/DigitalLibrary/Pages/Account/Admin/Categories/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxBZG1pblxDYXRlZ29yaWVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Toturials/SQL4DotNetDevelopersTutorial/DigitalLibrary/DigitalLibrary/Pages/Account/Admin/Categories/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxBZG1pblxDYXRlZ29yaWVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Toturials/SQL4DotNetDevelopersTutorial/DigitalLibrary/DigitalLibrary/Pages/Account/Admin/Categories/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxBZG1pblxDYXRlZ29yaWVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Toturials/SQL4DotNetDevelopersTutorial/DigitalLibrary/DigitalLibrary/Pages/Account/Admin/Categories/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxBZG1pblxDYXRlZ29yaWVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/Toturials/SQL4DotNetDevelopersTutorial/DigitalLibrary/DigitalLibrary/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -30,6 +50,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [F:/Toturials/SQL4DotNetDevelopersTutorial/DigitalLibrary/DigitalLibrary/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Toturials/SQL4DotNetDevelopersTutorial/DigitalLibrary/DigitalLibrary/Pages/Shared/_Panel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9QYW5lbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/Toturials/SQL4DotNetDevelopersTutorial/DigitalLibrary/DigitalLibrary/Pages/Shared/_ValidationScriptsPartial.cshtml]

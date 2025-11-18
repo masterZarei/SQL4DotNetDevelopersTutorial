@@ -70,9 +70,7 @@ F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\obj\Debu
 F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\obj\Debug\net9.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\obj\Debug\net9.0\scopedcss\bundle\DigitalLibrary.styles.css
 F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\obj\Debug\net9.0\scopedcss\projectbundle\DigitalLibrary.bundle.scp.css
-F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\obj\Debug\net9.0\compressed\tabepfb4mg-b9sayid5wm.gz
 F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\obj\Debug\net9.0\compressed\6jfnj2zs50-61n19gt1b8.gz
-F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\obj\Debug\net9.0\compressed\s8de901bbl-xtxxf3hu2r.gz
 F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\obj\Debug\net9.0\compressed\cjp5l8tcdq-bqjiyaj88i.gz
 F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\obj\Debug\net9.0\compressed\76jf31r5gv-c2jlpeoesf.gz
 F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\obj\Debug\net9.0\compressed\dxlxrsq34y-erw9l3u2r3.gz
@@ -145,3 +143,10 @@ F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\obj\Debu
 F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\obj\Debug\net9.0\DigitalLibrary.pdb
 F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\obj\Debug\net9.0\DigitalLibrary.genruntimeconfig.cache
 F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\obj\Debug\net9.0\ref\DigitalLibrary.dll
+F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\obj\Debug\net9.0\compressed\8lnnv9r1b0-fc9074g7ds.gz
+F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\obj\Debug\net9.0\compressed\w1633vzs1y-srdpgsfq1o.gz
+F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\obj\Debug\net9.0\compressed\tlolywg9te-l7pcb1u8ho.gz
+F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\obj\Debug\net9.0\compressed\ko7179kntz-lglhgtjaln.gz
+F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\obj\Debug\net9.0\compressed\sv5hvtu7s7-gliav1nccr.gz
+F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\obj\Debug\net9.0\compressed\qx7t34rqih-fqvao1grvp.gz
+F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\obj\Debug\net9.0\compressed\l370uae8ey-csq51ukx6z.gz
