@@ -9,7 +9,7 @@
         <li><a class="hover:text-blue-600 transition" href="~/Account/Admin/Books">کتاب ها</a> <span class="text-gray-500">/</span></li>
     </ul>
     <div class="block tablet:flex justify-between">
-       <partial name="_Panel" />
+        <partial name="_Panel" />
         <div class="w-full tablet:w-9/12 px-3 mt-5">
             <div class="PanelCard border rounded p-3">
                 <!--                تایتل-->
@@ -22,7 +22,7 @@
                 </div>
                 <div class="PanelCard-body pt-5">
                     <div class="overflow-auto">
-                        @if(Model.BookDto.Count >0)
+                        @if (Model.BookDto.Count > 0)
                         {
                             <table class="table text-center">
                                 <thead class="bg-gray-200">

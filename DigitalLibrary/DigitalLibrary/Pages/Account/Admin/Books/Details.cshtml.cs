@@ -18,6 +18,7 @@ namespace DigitalLibrary.Pages.Account.Admin.Books
         }
         [BindProperty]
         public BookCrudDto BookDto { get; set; }
+
         public async Task<IActionResult> OnGet(int Id)
         {
             if (Id <= 0)
@@ -42,15 +43,13 @@ namespace DigitalLibrary.Pages.Account.Admin.Books
             await InitList();
             return Page();
         }
-
         public async Task InitList()
         {
             var categories = await _categoryRepository.GetAllAsync();
             if (categories is not null && categories.Count > 0)
+            {
                 BookDto.BookCategories = new SelectList(categories, nameof(CategoryDto.Id), nameof(CategoryDto.Title), BookDto.CategoryId);
-
-
-
+            }
         }
     }
 }

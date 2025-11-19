@@ -18,21 +18,22 @@ namespace DigitalLibrary.Pages.Account.Admin.Books
         }
         [BindProperty]
         public BookCrudDto BookDto { get; set; }
+
         public async Task<IActionResult> OnGet()
         {
             await InitList();
             return Page();
         }
-
         public async Task InitList()
         {
             var categories = await _categoryRepository.GetAllAsync();
             if (categories is not null && categories.Count > 0)
+            {
                 BookDto = new()
                 {
                     BookCategories = new SelectList(categories, nameof(CategoryDto.Id), nameof(CategoryDto.Title))
                 };
-
+            }
         }
         public async Task<IActionResult> OnPost()
         {
@@ -63,16 +64,17 @@ namespace DigitalLibrary.Pages.Account.Admin.Books
                 using var filestream = new FileStream(savepath, FileMode.Create);
                 BookDto.FileUp.CopyTo(filestream);
             }
-            await _repository.AddAsync(new BookDto
+
+            await _repository.AddAsync(new Models.BookDto
             {
                 FileUrl = BookDto.FileUrl,
                 ImageUrl = BookDto.ImageUrl,
                 Author = BookDto.Author,
                 Description = BookDto.Description,
                 CategoryId = Convert.ToInt32(BookDto.SelectedCategory),
-                Title = BookDto.Title,
-                
+                Title = BookDto.Title
             });
+
             return RedirectToPage("./Index");
         }
     }

@@ -9,4 +9,5 @@ public class BookCrudDto : BookDto
 
     public string? SelectedCategory { get; set; }
     public SelectList? BookCategories { get; set; }
+
 }

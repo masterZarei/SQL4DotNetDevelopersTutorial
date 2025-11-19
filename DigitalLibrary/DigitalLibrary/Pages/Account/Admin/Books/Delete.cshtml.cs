@@ -1,4 +1,4 @@
-﻿using DigitalLibrary.Data.Repositories;
+using DigitalLibrary.Data.Repositories;
 using DigitalLibrary.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -9,9 +9,9 @@ namespace DigitalLibrary.Pages.Account.Admin.Books
     {
         private readonly IBookRepository _repository;
 
-        public DeleteModel(IBookRepository bookRepository)
+        public DeleteModel(IBookRepository repository)
         {
-            _repository = bookRepository;
+            _repository = repository;
         }
         [BindProperty]
         public BookDto BookDto { get; set; }
@@ -25,25 +25,22 @@ namespace DigitalLibrary.Pages.Account.Admin.Books
             if (BookDto is null)
             {
                 return RedirectToPage("./Index");
+
             }
             return Page();
         }
-        public async Task<IActionResult> OnPostAsync(int Id)
+        public async Task<IActionResult> OnPost(int Id)
         {
             if (Id <= 0)
             {
-                ModelState.AddModelError("", "آیدی نامعتبر است");
-                return Page();
+                return RedirectToPage("./Index");
             }
-            var category = await _repository.GetByIdAsync(Id);
-
-            if (category is null)
+            BookDto = await _repository.GetByIdAsync(Id);
+            if (BookDto is null)
             {
                 return RedirectToPage("./Index");
             }
-
-            var result = await _repository.SoftDeleteAsync(Id);
-
+            await _repository.SoftDeleteAsync(Id);
             return RedirectToPage("./Index");
         }
     }
