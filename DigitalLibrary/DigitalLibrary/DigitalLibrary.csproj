@@ -11,12 +11,4 @@
     <PackageReference Include="Microsoft.Data.SqlClient" Version="6.1.3" />
   </ItemGroup>
 
-  <ItemGroup>
-    <EditorConfigFiles Remove="F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\.editorconfig" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="F:\Toturials\SQL4DotNetDevelopersTutorial\DigitalLibrary\DigitalLibrary\.editorconfig" />
-  </ItemGroup>
-
 </Project>

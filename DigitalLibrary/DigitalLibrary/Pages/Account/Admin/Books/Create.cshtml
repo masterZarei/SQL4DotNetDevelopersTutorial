@@ -1,0 +1,114 @@
+﻿@page
+@model DigitalLibrary.Pages.Account.Admin.Books.CreateModel
+@{
+}
+<div class="container pt-8">
+    <ul class="breadcrumb">
+        <li><a class="hover:text-blue-600 transition" href="~/">خانه</a> <span class="text-gray-500">/</span></li>
+        <li><a class="hover:text-blue-600 transition" href="~/Account/Admin">پنل</a> <span class="text-gray-500">/</span></li>
+        <li><a class="hover:text-blue-600 transition" href="~/Account/Admin/Books">کتاب ها</a> <span class="text-gray-500">/</span></li>
+        <li><a class="hover:text-blue-600 transition" href="#">ایجاد</a></li>
+    </ul>
+    <div class="block tablet:flex justify-between">
+        <partial name="_Panel" />
+        <div class="w-full tablet:w-9/12 px-3 mt-5">
+            <div class="PanelCard border rounded p-3">
+                <!--                تایتل-->
+                <div class="PanelCard-header">
+                    <h2 class="text-lg">اضافه کردن کتاب</h2>
+                </div>
+                <div class="PanelCard-body pt-5">
+                    <form method="post" enctype="multipart/form-data">
+                        <div asp-validation-summary="All"></div>
+                        <div class="block tablet:flex justify-between">
+                            <div class="w-full tablet:w-1/2 px-2">
+                                <!--                                نام-->
+                                <div class="flex flex-col mt-3">
+                                    <label for="name" class="customLabel">نام محصول</label>
+                                    <input type="text" id="name"
+                                        asp-for="BookDto.Title"
+                                           class="customInput">
+                                </div>
+                                <!--                          نام نویسنده-->
+                                <div class="flex flex-col mt-3">
+                                    <label for="PageNumb" class="customLabel">نام نویسنده</label>
+                                    <input type="text" id="PageNumb"
+                                           asp-for="BookDto.Author"
+                                           class="customInput">
+                                </div>
+                                <!--                          توضیحات-->
+                                <div class="flex flex-col mt-3">
+                                    <label for="desc" class="customLabel">توضیحات</label>
+                                    <textarea type="text" id="desc"
+                                              asp-for="BookDto.Description"
+                                              class="customInput"></textarea>
+                                </div>
+                            </div>
+                            <div class="w-full tablet:w-1/2 px-2">
+                                <label for="CoverImage"
+                                       class="mt-3 text-white py-1 rounded-md pr-4 bg-indigo-600 cursor-pointer flex flex-row-reverse justify-between">
+                                    <input type="file" asp-for="BookDto.FileUp">
+                                    <span class="text-center">آپلود فایل</span>
+                                </label>
+                                <label for="CoverImage"
+                                       class="mt-3 text-white py-1 rounded-md pr-4 bg-indigo-600 cursor-pointer flex flex-row-reverse justify-between">
+                                    <input type="file" asp-for="BookDto.ImageUp" id="ImgUp">
+                                    <span class="text-center">آپلود کاور</span>
+                                </label>
+                                <!--                                دمو-->
+                                <img src="" id="imgPreview" class="w-full h-52 block border mt-3 px-2" alt="product">
+
+                                <!--    دسته بندی-->
+                                <div class="flex flex-col mt-3">
+                                    <label for="Category" class="customLabel">دسته بندی</label>
+                                    <div>
+                                        <select asp-for="BookDto.SelectedCategory" asp-items="Model.BookDto.BookCategories"
+                                                class="customInput">
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full flex px-2">
+                            <div class="w-1/2 py-3 pl-3">
+                                <button type="submit" class="subBtn btnSuccess">
+                                    تایید
+                                </button>
+                            </div>
+                            <div class="w-1/2 py-3 pr-3">
+                                <a asp-page="Index" class="subBtn btnDark">
+                                    بازگشت
+                                </a>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#imgPreview').attr('src', e.target.result);
+                }
+
+                reader.readAsDataURL(input.files[0]); // convert to base64 string
+            }
+        }
+        $("#ImgUp").change(function () {
+            readURL(this);
+        });
+    </script>
+}

@@ -1,0 +1,50 @@
+﻿@page
+@model DigitalLibrary.Pages.Account.Admin.Books.DeleteModel
+@{
+}
+<div class="space-x-normal py-8">
+    <ul class="breadcrumb">
+        <li><a class="hover:text-blue-600 transition" href="~/">خانه</a> <span class="text-gray-500">/</span></li>
+        <li><a class="hover:text-blue-600 transition" href="~/Account/Admin">پنل</a> <span class="text-gray-500">/</span></li>
+        <li><a class="hover:text-blue-600 transition" href="~/Account/Admin/Categories">کتاب ها</a><span class="text-gray-500">/</span></li>
+        <li><a class="hover:text-blue-600 transition" href="#">حذف</a></li>
+    </ul>
+    <div class="block tablet:flex justify-between">
+        <partial name="_Panel" />
+        <div class="w-full tablet:w-9/12 px-3 mt-5">
+            <div class="PanelCard border rounded p-3">
+                <!--                تایتل-->
+                <div class="PanelCard-header">
+                    <h2 class="text-lg">حذف کتاب</h2>
+                </div>
+                <div class="PanelCard-body pt-5">
+                    <form method="post">
+                        <input type="hidden" asp-for="BookDto.Id" />
+                        <div class="block tablet:flex justify-between">
+                            <!--                            نام-->
+                            <div class="block tablet:w-1/2 px-2">
+                                <div class="flex flex-col mt-3">
+                                    <label for="name" class="customLabel">نام کتاب</label>
+                                    <input asp-for="BookDto.Title" type="text" id="name" disabled
+                                           class="customInput">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full flex px-2">
+                            <div class="w-1/2 py-3 pl-3">
+                                <button type="submit" class="subBtn btnDanger">
+                                    حذف
+                                </button>
+                            </div>
+                            <div class="w-1/2 py-3 pr-3">
+                                <a asp-page="Index" class="subBtn btnDark">
+                                    بازگشت
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
