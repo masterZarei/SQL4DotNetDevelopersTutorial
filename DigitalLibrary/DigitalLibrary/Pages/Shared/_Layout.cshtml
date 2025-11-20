@@ -26,14 +26,14 @@
                 <div class="flex gap-4">
                     @if (User.Identity.IsAuthenticated)
                     {
-                        <a href="#" class="text-indigo-700">پنل کاربری</a>
+                        <a href="/" class="text-indigo-700">پنل کاربری</a>
 
                     }
                     else
                     {
                         <a href="/Account/Login" class="text-indigo-700">ورود</a>
                         <a href="/Account/Register" class="text-indigo-700">ثبت نام</a>
-                        
+
                     }
                 </div>
             </nav>

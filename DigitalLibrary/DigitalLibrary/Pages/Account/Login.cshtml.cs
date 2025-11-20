@@ -29,22 +29,22 @@ namespace DigitalLibrary.Pages.Account
                 return Page();
             }
             LoginDto.Password = Md5Hasher.Hash(LoginDto.Password);
-            var result = await _repository.LoginUser(LoginDto);  
+            var result = await _repository.LoginUser(LoginDto);
 
             if (result is null)
             {
-                ModelState.AddModelError("", "نام کاربری یا رمز عبور شما معتبر نمی باشد");
+                ModelState.AddModelError("","نام کاربری یا رمز عبور شما اشتباه است");
                 return Page();
             }
+
             var claims = new List<Claim>
             {
                 new(ClaimTypes.NameIdentifier, result.Id.ToString()),
                 new(ClaimTypes.Name, result.FullName),
                 new(ClaimTypes.MobilePhone, result.PhoneNumber),
-                new(ClaimTypes.Role, result.RoleId.ToString()),
+                new(ClaimTypes.Role, result.RoleId.ToString())
             };
-
-            var identity = new ClaimsIdentity(claims,CookieAuthenticationDefaults.AuthenticationScheme);
+            var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
             var principal = new ClaimsPrincipal(identity);
 
             await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal,
