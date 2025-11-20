@@ -1,12 +1,13 @@
 using DigitalLibrary.Data;
 using DigitalLibrary.Data.Repositories;
+using DigitalLibrary.Utitlities;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.Data.SqlClient;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddRazorPages();
+
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
     {
@@ -21,7 +22,14 @@ builder.Services.AddScoped<IBookRepository, BookRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IDownloadedBooksRepository, DownloadedBooksRepository>();
 
-
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("Admin", p => p.RequireRole(SD.AdminEndUser.ToString()));
+});
+builder.Services.AddRazorPages(options =>
+{
+    options.Conventions.AuthorizeFolder("/Account/Admin", "Admin");
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

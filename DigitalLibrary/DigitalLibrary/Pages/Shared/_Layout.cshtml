@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using DigitalLibrary.Utitlities
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -20,13 +21,22 @@
         <div class="container">
             <nav class="flex items-center justify-between p-8">
                 <div class="flex gap-4">
-                    <h1><a href="#">Digital Library</a></h1>
-                    <a href="#" class="text-indigo-700"> خانه </a>
+                    <h1><a href="/">کتابخانه آنلاین</a></h1>
+                    <a href="/" class="text-indigo-700"> خانه </a>
                 </div>
                 <div class="flex gap-4">
                     @if (User.Identity.IsAuthenticated)
                     {
-                        <a href="/" class="text-indigo-700">پنل کاربری</a>
+                        @if (User.IsInRole(SD.AdminEndUser.ToString()))
+                        {
+                            <a href="/Account/Admin/Users" class="text-indigo-700">پنل کاربری</a>
+
+                        }
+                        @if (User.IsInRole(SD.UserEndUser.ToString()))
+                        {
+                            <a href="/Account/MyLibrary" class="text-indigo-700">پنل کاربری</a>
+
+                        }
                         <a href="/Account/Logout" class="text-indigo-700">خروج</a>
 
                     }

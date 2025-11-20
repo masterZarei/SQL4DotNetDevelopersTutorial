@@ -1,0 +1,29 @@
+﻿@page
+@model DigitalLibrary.Pages.Account.MyLibraryModel
+@{
+}
+<div class="container">
+    <div class="block tablet:flex justify-between">
+        <partial name="_Panel" />
+        <div class="w-full tablet:w-9/12 px-3 mt-5">
+            @if (Model.BookDto is not null && Model.BookDto.Count > 0)
+            {
+                <section class="container grid grid-cols-4 lg1200:grid-cols-5 py-8 gap-4">
+                    @foreach (var item in Model.BookDto)
+                    {
+                        <a href="/BookDetails?Id=@item.Id" class="border">
+                            <img src="~/Assets/Pictures/@item.ImageUrl" class="w-full h-36" alt="@item.Title">
+                            <div class="py-4">
+                                <h2 class="text-center">@item.Title</h2>
+                            </div>
+                        </a>
+                    }
+                </section>
+            }
+            else
+            {
+                <h3 class="alertInfo text-center">کتابی در کتابخانه شما موجود نیست</h3>
+            }
+        </div>
+    </div>
+</div>

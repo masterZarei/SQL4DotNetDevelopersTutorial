@@ -1,13 +1,27 @@
-﻿<div class="w-full tablet:w-3/12 px-3 mt-2">
+﻿@using DigitalLibrary.Utitlities
+<div class="w-full tablet:w-3/12 px-3 mt-2">
 	<ul class="w-full rounded overflow-hidden mt-3 text-gray-800 border">
+		@if (User.IsInRole(SD.AdminEndUser.ToString()))
+		{
+			<li class="panelList">
+				<a href="/Account/Admin/Categories">
+					مدیریت دسته بندی ها
+				</a>
+			</li>
+			<li class="panelList">
+				<a href="/Account/Admin/Books">
+					مدیریت کتاب ها
+				</a>
+			</li>
+			<li class="panelList">
+				<a href="/Account/Admin/Users">
+					مدیریت کاربران
+				</a>
+			</li>
+		}
 		<li class="panelList">
-			<a href="/Account/Admin/Categories">
-				مدیریت دسته بندی ها
-			</a>
-		</li>
-		<li class="panelList">
-			<a href="/Account/Admin/Books">
-				مدیریت کتاب ها
+			<a href="/Account/MyLibrary">
+				کتابخانه من
 			</a>
 		</li>
 	</ul>
