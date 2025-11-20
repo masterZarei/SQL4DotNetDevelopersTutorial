@@ -1,4 +1,4 @@
-using DigitalLibrary.Data.Repositories;
+﻿using DigitalLibrary.Data.Repositories;
 using DigitalLibrary.Models;
 using DigitalLibrary.Utitlities;
 using Microsoft.AspNetCore.Mvc;
@@ -26,11 +26,16 @@ namespace DigitalLibrary.Pages.Account.Admin.Users
         {
             UserDto = new()
             {
-                UserRoles = new SelectList(new Dictionary<int, string>
-                {
-                    {1,"Admin" },
-                    {2, "User"},
-                }, "Id", "Title", UserDto.RoleId)
+                UserRoles = new SelectList
+                (
+
+                    new[]
+                    {
+                        new {Id = 1, Title="ادمین"},
+                        new {Id = 2, Title="کاربر"},
+                    }
+                    , "Id", "Title"
+                )
             };
         }
         public async Task<IActionResult> OnPost()

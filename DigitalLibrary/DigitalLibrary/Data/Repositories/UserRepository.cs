@@ -42,6 +42,7 @@ namespace DigitalLibrary.Data.Repositories
         public async Task<int> UpdateAsync(UserDto dto)
         {
             return await _dataContext.ExecuteNonQueryAsync("sp_UpdateUser", CommandType.StoredProcedure,
+                new SqlParameter("@Id", dto.Id),
                 new SqlParameter("@FullName", dto.FullName),
                 new SqlParameter("@PhoneNumber", dto.PhoneNumber),
                 new SqlParameter("@RoleId", dto.RoleId));

@@ -35,9 +35,9 @@ namespace DigitalLibrary.Pages.Account.Admin.Users
                 ModelState.AddModelError("", "آیدی نامعتبر است");
                 return Page();
             }
-            var category = await _repository.GetByIdAsync(Id);
+            var user = await _repository.GetByIdAsync(Id);
 
-            if (category is null)
+            if (user is null)
             {
                 return RedirectToPage("./Index");
             }

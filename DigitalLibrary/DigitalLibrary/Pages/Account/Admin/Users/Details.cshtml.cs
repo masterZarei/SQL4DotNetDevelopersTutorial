@@ -1,4 +1,4 @@
-using DigitalLibrary.Data.Repositories;
+﻿using DigitalLibrary.Data.Repositories;
 using DigitalLibrary.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -27,7 +27,7 @@ namespace DigitalLibrary.Pages.Account.Admin.Users
             {
                 return RedirectToPage("./Index");
             }
-            UserDto = new UserCrudDto()
+            UserDto = new()
             {
                 Id = Id,
                 FullName = user.FullName,
@@ -40,15 +40,15 @@ namespace DigitalLibrary.Pages.Account.Admin.Users
         public void InitList()
         {
 
-            UserDto.UserRoles = new SelectList(
+            UserDto.UserRoles = new SelectList
+            (
+
                 new[]
                 {
-                    new { Id = 1, Title = "Admin" },
-                    new { Id = 2, Title = "User" }
-                },
-                "Id",
-                "Title",
-                UserDto.RoleId
+                        new {Id = 1, Title="ادمین"},
+                        new {Id = 2, Title="کاربر"},
+                }
+                , "Id", "Title", UserDto.RoleId
             );
         }
     }
