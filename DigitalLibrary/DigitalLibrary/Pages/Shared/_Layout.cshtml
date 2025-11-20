@@ -1,9 +1,10 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - DigitalLibrary</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - کتابخانه آنلاین</title>
     <script type="importmap"></script>
     <link rel="stylesheet" href="~/Assets/styles/lightslider.min.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Assets/styles/output.css" asp-append-version="true" />
@@ -15,43 +16,33 @@
 
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">DigitalLibrary</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-
-    <footer class="border-top footer text-muted">
+    <header class="w-full  bg-gray-100">
         <div class="container">
-            &copy; 2025 - DigitalLibrary - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            <nav class="flex items-center justify-between p-8">
+                <div class="flex gap-4">
+                    <h1><a href="#">Digital Library</a></h1>
+                    <a href="#" class="text-indigo-700"> خانه </a>
+                </div>
+                <div class="flex gap-4">
+                    <a href="#" class="text-indigo-700">پنل کاربری</a>
+                    <a href="#" class="text-indigo-700">ورود</a>
+                    <a href="#" class="text-indigo-700">ثبت نام</a>
+                </div>
+            </nav>
         </div>
+    </header>
+
+    @RenderBody()
+
+    <footer class="py-4 flex justify-between items-center bg-gray-100">
+        <h2 class="block mx-auto">تمامی حقوق این وب سایت متعلق به تاپ لرن است</h2>
     </footer>
 
-    <script src="~/Assets/Js/jquery-3.3.1.min.js"></script>
-    <script src="~/Assets/Js/lightslider.min.js"></script>
-    <script src="~/Assets/Js/LightSlider.js"></script>
+
+</body>
+<script src="~/Assets/Js/jquery-3.3.1.min.js"></script>
+<script src="~/Assets/Js/lightslider.min.js"></script>
+<script src="~/Assets/Js/LightSlider.js"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
-</body>
 </html>

@@ -1,10 +1,31 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "خانه";
 }
+<section class="container mx-auto mb-12 px-4 mt-2">
+    <div class="item w-full h-full items-center">
+        <img src="~/Assets/image/1140x250.jpg" class="w-full banner rounded-md border border-gray-100" alt="">
+    </div>
+</section>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<section class="container grid lg1200:grid-cols-6 py-8 gap-4">
+
+    @if (Model.BookDto is not null && Model.BookDto.Count > 0)
+    {
+        @foreach (var item in Model.BookDto)
+        {
+            <a asp-page="BookDetails" asp-route-Id="@item.Id" class="border">
+                <img src="~/Assets/Pictures/@item.ImageUrl" class="w-full h-36" alt="@item.Title">
+                <div class="py-4">
+                    <h2 class="text-center">@item.Title</h2>
+                </div>
+            </a>
+        }
+    }
+    else
+    {
+        <h3 class="alertInfo text-center">کتابی موجود نیست</h3>
+    }
+
+</section>

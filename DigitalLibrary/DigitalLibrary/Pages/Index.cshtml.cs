@@ -1,24 +1,23 @@
 using DigitalLibrary.Data.Repositories;
+using DigitalLibrary.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.Threading.Tasks;
 
 namespace DigitalLibrary.Pages
 {
     public class IndexModel : PageModel
     {
-        private readonly ILogger<IndexModel> _logger;
-        private readonly IBookRepository bookRepository;
+        private readonly IBookRepository _bookRepository;
 
-        public IndexModel(ILogger<IndexModel> logger, IBookRepository bookRepository)
+        public IndexModel(IBookRepository bookRepository)
         {
-            _logger = logger;
-            this.bookRepository = bookRepository;
+            _bookRepository = bookRepository;
         }
-
+        public List<BookDto> BookDto { get; set; }
         public async Task<IActionResult> OnGet()
         {
-            var list = await bookRepository.GetAllAsync();
+            //YAGNI => You Ain't Gonna Need It
+            BookDto = await _bookRepository.GetAllAsync();
 
             return Page();
         }

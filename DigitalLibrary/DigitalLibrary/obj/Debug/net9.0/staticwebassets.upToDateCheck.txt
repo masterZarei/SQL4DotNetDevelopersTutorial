@@ -1,5 +1,6 @@
 wwwroot\Assets\Files\3943f85a-580b-4aed-bceb-87dcf26f16a9.pdf
 wwwroot\Assets\Files\89b3d4cf-a8ef-42ef-a65a-e4dc90f4423a.pdf
+wwwroot\Assets\image\1140x250.jpg
 wwwroot\Assets\Js\jquery-3.3.1.min.js
 wwwroot\Assets\Js\LightSlider.js
 wwwroot\Assets\Js\lightslider.min.js
