@@ -1,0 +1,100 @@
+﻿@page
+@model DigitalLibrary.Pages.Account.Admin.Users.CreateModel
+@{
+}
+<div class="container pt-8">
+    <ul class="breadcrumb">
+        <li><a class="hover:text-blue-600 transition" href="~/">خانه</a> <span class="text-gray-500">/</span></li>
+        <li><a class="hover:text-blue-600 transition" href="~/Account/Admin">پنل</a> <span class="text-gray-500">/</span></li>
+        <li><a class="hover:text-blue-600 transition" href="~/Account/Admin/Users">کاربران</a></li>
+        <li><a class="hover:text-blue-600 transition" href="#">ایجاد</a></li>
+    </ul>
+    <div class="block tablet:flex justify-between">
+        <partial name="_Panel" />
+        <div class="w-full tablet:w-9/12 px-3 mt-5">
+            <div class="PanelCard border rounded p-3">
+                <!--                تایتل-->
+                <div class="PanelCard-header">
+                    <h2 class="text-lg">ایجاد کاربر</h2>
+                </div>
+                <div class="PanelCard-body pt-5">
+                    <form method="post">
+                        <div class="block tablet:flex justify-between">
+                            <div class="w-full tablet:w-1/2 px-2">
+                                <!--                                نام-->
+                                <div class="flex flex-col mt-3">
+                                    <label for="name" class="customLabel">نام کاربر</label>
+                                    <input asp-for="UserDto.FullName" type="text" id="name"
+                                           class="customInput">
+                                </div>
+                                <!--                     رمز عبور-->
+                                <div class="flex flex-col mt-3">
+                                    <label for="username" class="customLabel">رمز عبور</label>
+                                    <input asp-for="UserDto.Password" type="text" id="username"
+                                           class="customInput">
+                                </div>
+                            </div>
+                            <div class="w-full tablet:w-1/2 px-2">
+                                <!--                    شماره موبایل -->
+                                <div class="flex flex-col mt-3">
+                                    <label for="PhoneNumber" class="customLabel">شماره موبایل </label>
+                                    <input asp-for="UserDto.PhoneNumber" type="text" id="PhoneNumber"
+                                           class="customInput">
+                                </div>
+                                <!--    نقش-->
+                                <div class="flex flex-col mt-3">
+                                    <label for="role" class="customLabel">نقش</label>
+                                    <div>
+                                        <select id="role" asp-for="UserDto.SelectedRole"
+                                                class="customInput">
+                                            <option value="1">ادمین</option>
+                                            <option value="2">کاربر</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full flex px-2">
+                            <div class="w-1/2 py-3 pl-3">
+                                <button type="submit" class="subBtn btnSuccess">
+                                    تایید
+                                </button>
+                            </div>
+                            <div class="w-1/2 py-3 pr-3">
+                                <a asp-page="Index" class="subBtn btnDark">
+                                    بازگشت
+                                </a>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#imgPreview').attr('src', e.target.result);
+                }
+
+                reader.readAsDataURL(input.files[0]); // convert to base64 string
+            }
+        }
+        $("#ImgUp").change(function () {
+            readURL(this);
+        });
+    </script>
+}

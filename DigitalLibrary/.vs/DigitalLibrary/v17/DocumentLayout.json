@@ -1,48 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\DigitalLibrary\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{86A30493-A199-4633-B007-DBDC5716031C}|DigitalLibrary\\DigitalLibrary.csproj|f:\\toturials\\sql4dotnetdeveloperstutorial\\digitallibrary\\digitallibrary\\pages\\account\\admin\\books\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{86A30493-A199-4633-B007-DBDC5716031C}|DigitalLibrary\\DigitalLibrary.csproj|solutionrelative:digitallibrary\\pages\\account\\admin\\books\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86A30493-A199-4633-B007-DBDC5716031C}|DigitalLibrary\\DigitalLibrary.csproj|f:\\toturials\\sql4dotnetdeveloperstutorial\\digitallibrary\\digitallibrary\\pages\\account\\admin\\books\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86A30493-A199-4633-B007-DBDC5716031C}|DigitalLibrary\\DigitalLibrary.csproj|solutionrelative:digitallibrary\\pages\\account\\admin\\books\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86A30493-A199-4633-B007-DBDC5716031C}|DigitalLibrary\\DigitalLibrary.csproj|f:\\toturials\\sql4dotnetdeveloperstutorial\\digitallibrary\\digitallibrary\\pages\\account\\admin\\books\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86A30493-A199-4633-B007-DBDC5716031C}|DigitalLibrary\\DigitalLibrary.csproj|solutionrelative:digitallibrary\\pages\\account\\admin\\books\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86A30493-A199-4633-B007-DBDC5716031C}|DigitalLibrary\\DigitalLibrary.csproj|f:\\toturials\\sql4dotnetdeveloperstutorial\\digitallibrary\\digitallibrary\\pages\\account\\admin\\books\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{86A30493-A199-4633-B007-DBDC5716031C}|DigitalLibrary\\DigitalLibrary.csproj|solutionrelative:digitallibrary\\pages\\account\\admin\\books\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86A30493-A199-4633-B007-DBDC5716031C}|DigitalLibrary\\DigitalLibrary.csproj|f:\\toturials\\sql4dotnetdeveloperstutorial\\digitallibrary\\digitallibrary\\pages\\account\\admin\\books\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86A30493-A199-4633-B007-DBDC5716031C}|DigitalLibrary\\DigitalLibrary.csproj|solutionrelative:digitallibrary\\pages\\account\\admin\\books\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86A30493-A199-4633-B007-DBDC5716031C}|DigitalLibrary\\DigitalLibrary.csproj|f:\\toturials\\sql4dotnetdeveloperstutorial\\digitallibrary\\digitallibrary\\pages\\account\\admin\\books\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{86A30493-A199-4633-B007-DBDC5716031C}|DigitalLibrary\\DigitalLibrary.csproj|solutionrelative:digitallibrary\\pages\\account\\admin\\books\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86A30493-A199-4633-B007-DBDC5716031C}|DigitalLibrary\\DigitalLibrary.csproj|f:\\toturials\\sql4dotnetdeveloperstutorial\\digitallibrary\\digitallibrary\\models\\bookcruddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86A30493-A199-4633-B007-DBDC5716031C}|DigitalLibrary\\DigitalLibrary.csproj|solutionrelative:digitallibrary\\models\\bookcruddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86A30493-A199-4633-B007-DBDC5716031C}|DigitalLibrary\\DigitalLibrary.csproj|f:\\toturials\\sql4dotnetdeveloperstutorial\\digitallibrary\\digitallibrary\\pages\\account\\admin\\books\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{86A30493-A199-4633-B007-DBDC5716031C}|DigitalLibrary\\DigitalLibrary.csproj|solutionrelative:digitallibrary\\pages\\account\\admin\\books\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86A30493-A199-4633-B007-DBDC5716031C}|DigitalLibrary\\DigitalLibrary.csproj|f:\\toturials\\sql4dotnetdeveloperstutorial\\digitallibrary\\digitallibrary\\pages\\account\\admin\\books\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86A30493-A199-4633-B007-DBDC5716031C}|DigitalLibrary\\DigitalLibrary.csproj|solutionrelative:digitallibrary\\pages\\account\\admin\\books\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86A30493-A199-4633-B007-DBDC5716031C}|DigitalLibrary\\DigitalLibrary.csproj|f:\\toturials\\sql4dotnetdeveloperstutorial\\digitallibrary\\digitallibrary\\pages\\account\\admin\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{86A30493-A199-4633-B007-DBDC5716031C}|DigitalLibrary\\DigitalLibrary.csproj|solutionrelative:digitallibrary\\pages\\account\\admin\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -50,138 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Delete.cshtml.cs",
-              "DocumentMoniker": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\DigitalLibrary\\DigitalLibrary\\Pages\\Account\\Admin\\Books\\Delete.cshtml.cs",
-              "RelativeDocumentMoniker": "DigitalLibrary\\Pages\\Account\\Admin\\Books\\Delete.cshtml.cs",
-              "ToolTip": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\DigitalLibrary\\DigitalLibrary\\Pages\\Account\\Admin\\Books\\Delete.cshtml.cs",
-              "RelativeToolTip": "DigitalLibrary\\Pages\\Account\\Admin\\Books\\Delete.cshtml.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAADwvykAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T15:37:55.99Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\DigitalLibrary\\DigitalLibrary\\Pages\\Account\\Admin\\Books\\Delete.cshtml",
-              "RelativeDocumentMoniker": "DigitalLibrary\\Pages\\Account\\Admin\\Books\\Delete.cshtml",
-              "ToolTip": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\DigitalLibrary\\DigitalLibrary\\Pages\\Account\\Admin\\Books\\Delete.cshtml",
-              "RelativeToolTip": "DigitalLibrary\\Pages\\Account\\Admin\\Books\\Delete.cshtml",
-              "ViewState": "AgIAABEAAAAAAAAAAAAuwB4AAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-19T15:37:47.428Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Details.cshtml.cs",
-              "DocumentMoniker": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\DigitalLibrary\\DigitalLibrary\\Pages\\Account\\Admin\\Books\\Details.cshtml.cs",
-              "RelativeDocumentMoniker": "DigitalLibrary\\Pages\\Account\\Admin\\Books\\Details.cshtml.cs",
-              "ToolTip": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\DigitalLibrary\\DigitalLibrary\\Pages\\Account\\Admin\\Books\\Details.cshtml.cs",
-              "RelativeToolTip": "DigitalLibrary\\Pages\\Account\\Admin\\Books\\Details.cshtml.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAABIAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T15:37:15.364Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\DigitalLibrary\\DigitalLibrary\\Pages\\Account\\Admin\\Books\\Details.cshtml",
-              "RelativeDocumentMoniker": "DigitalLibrary\\Pages\\Account\\Admin\\Books\\Details.cshtml",
-              "ToolTip": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\DigitalLibrary\\DigitalLibrary\\Pages\\Account\\Admin\\Books\\Details.cshtml",
-              "RelativeToolTip": "DigitalLibrary\\Pages\\Account\\Admin\\Books\\Details.cshtml",
-              "ViewState": "AgIAACsAAAAAAAAAAAAuwDAAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-19T15:36:41.578Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\DigitalLibrary\\DigitalLibrary\\Pages\\Account\\Admin\\Books\\Edit.cshtml",
-              "RelativeDocumentMoniker": "DigitalLibrary\\Pages\\Account\\Admin\\Books\\Edit.cshtml",
-              "ToolTip": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\DigitalLibrary\\DigitalLibrary\\Pages\\Account\\Admin\\Books\\Edit.cshtml",
-              "RelativeToolTip": "DigitalLibrary\\Pages\\Account\\Admin\\Books\\Edit.cshtml",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAGAAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-19T15:18:55.795Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BookCrudDto.cs",
-              "DocumentMoniker": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\DigitalLibrary\\DigitalLibrary\\Models\\BookCrudDto.cs",
-              "RelativeDocumentMoniker": "DigitalLibrary\\Models\\BookCrudDto.cs",
-              "ToolTip": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\DigitalLibrary\\DigitalLibrary\\Models\\BookCrudDto.cs",
-              "RelativeToolTip": "DigitalLibrary\\Models\\BookCrudDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T11:44:49.682Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Create.cshtml.cs",
-              "DocumentMoniker": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\DigitalLibrary\\DigitalLibrary\\Pages\\Account\\Admin\\Books\\Create.cshtml.cs",
-              "RelativeDocumentMoniker": "DigitalLibrary\\Pages\\Account\\Admin\\Books\\Create.cshtml.cs",
-              "ToolTip": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\DigitalLibrary\\DigitalLibrary\\Pages\\Account\\Admin\\Books\\Create.cshtml.cs",
-              "RelativeToolTip": "DigitalLibrary\\Pages\\Account\\Admin\\Books\\Create.cshtml.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAAE8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T11:33:46.18Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\DigitalLibrary\\DigitalLibrary\\Pages\\Account\\Admin\\Books\\Create.cshtml",
-              "RelativeDocumentMoniker": "DigitalLibrary\\Pages\\Account\\Admin\\Books\\Create.cshtml",
-              "ToolTip": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\DigitalLibrary\\DigitalLibrary\\Pages\\Account\\Admin\\Books\\Create.cshtml",
-              "RelativeToolTip": "DigitalLibrary\\Pages\\Account\\Admin\\Books\\Create.cshtml",
-              "ViewState": "AgIAADgAAAAAAAAAAAAAAEAAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-19T11:33:36.795Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\DigitalLibrary\\DigitalLibrary\\Pages\\Account\\Admin\\Books\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "DigitalLibrary\\Pages\\Account\\Admin\\Books\\Index.cshtml.cs",
-              "ToolTip": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\DigitalLibrary\\DigitalLibrary\\Pages\\Account\\Admin\\Books\\Index.cshtml.cs",
-              "RelativeToolTip": "DigitalLibrary\\Pages\\Account\\Admin\\Books\\Index.cshtml.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAYwA4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T11:29:08.234Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\DigitalLibrary\\DigitalLibrary\\Pages\\Account\\Admin\\Books\\Index.cshtml",
-              "RelativeDocumentMoniker": "DigitalLibrary\\Pages\\Account\\Admin\\Books\\Index.cshtml",
-              "ToolTip": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\DigitalLibrary\\DigitalLibrary\\Pages\\Account\\Admin\\Books\\Index.cshtml",
-              "RelativeToolTip": "DigitalLibrary\\Pages\\Account\\Admin\\Books\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-19T11:28:45.199Z"
             }
           ]
         }

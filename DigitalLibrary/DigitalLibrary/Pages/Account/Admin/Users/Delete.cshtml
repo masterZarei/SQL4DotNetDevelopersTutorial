@@ -1,0 +1,58 @@
+﻿@page
+@model DigitalLibrary.Pages.Account.Admin.Users.DeleteModel
+@{
+}
+<div class="container pt-8">
+    <ul class="breadcrumb">
+        <li><a class="hover:text-blue-600 transition" href="~/">خانه</a> <span class="text-gray-500">/</span></li>
+        <li><a class="hover:text-blue-600 transition" href="~/Account/Admin">پنل</a> <span class="text-gray-500">/</span></li>
+        <li><a class="hover:text-blue-600 transition" href="~/Account/Admin/Users">کاربران</a></li>
+        <li><a class="hover:text-blue-600 transition" href="#">حذف</a></li>
+    </ul>
+    <div class="block tablet:flex justify-between">
+        <partial name="_Panel" />
+        <div class="w-full tablet:w-9/12 px-3 mt-5">
+            <div class="PanelCard border rounded p-3">
+                <!--                تایتل-->
+                <div class="PanelCard-header">
+                    <h2 class="text-lg">حذف کاربر</h2>
+                </div>
+                <div class="PanelCard-body pt-5">
+                    <form method="post">
+                        <input type="hidden" asp-for="UserDto.Id" />
+                        <div class="block tablet:flex justify-between">
+                            <div class="w-full tablet:w-1/2 px-2">
+                                <!--                                نام-->
+                                <div class="flex flex-col mt-3">
+                                    <label for="name" class="customLabel">نام کاربر</label>
+                                    <input disabled asp-for="UserDto.FullName" type="text" id="name"
+                                           class="customInput">
+                                </div>
+                            </div>
+                            <div class="w-full tablet:w-1/2 px-2">
+                                <!--                    شماره موبایل -->
+                                <div class="flex flex-col mt-3">
+                                    <label for="PhoneNumber" class="customLabel">شماره موبایل </label>
+                                    <input disabled asp-for="UserDto.PhoneNumber" type="text" id="PhoneNumber"
+                                           class="customInput">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full flex px-2">
+                            <div class="w-1/2 py-3 pl-3">
+                                <button type="submit" class="subBtn btnDanger">
+                                    تایید
+                                </button>
+                            </div>
+                            <div class="w-1/2 py-3 pr-3">
+                                <a asp-page="Index" class="subBtn btnDark">
+                                    بازگشت
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
