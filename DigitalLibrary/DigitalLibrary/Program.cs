@@ -19,6 +19,7 @@ builder.Services.AddScoped<ISqlDataContext, SqlDataContext>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IBookRepository, BookRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IDownloadedBooksRepository, DownloadedBooksRepository>();
 
 
 var app = builder.Build();

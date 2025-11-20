@@ -22,6 +22,7 @@ namespace DigitalLibrary.Data.Repositories
              FileUrl = r.IsDBNull(r.GetOrdinal("FileUrl")) ? null : r.GetString(r.GetOrdinal("FileUrl")),
              Author = r.IsDBNull(r.GetOrdinal("Author")) ? null : r.GetString(r.GetOrdinal("Author")),
              CategoryId = r.IsDBNull(r.GetOrdinal("CategoryId")) ? null : (int?)r.GetInt32(r.GetOrdinal("CategoryId")),
+             CategoryTitle = r.IsDBNull(r.GetOrdinal("CategoryTitle")) ? null : r.GetString(r.GetOrdinal("CategoryTitle")),
              IsDeleted = r.GetBoolean(r.GetOrdinal("IsDeleted"))
          };
         public async Task<List<BookDto>> GetAllAsync()
