@@ -1,0 +1,2 @@
+برای مشاهده این فایل در فرمت مناسب به آدرس زیر مراجعه کنید:
+https://github.com/masterZarei/SQL4DotNetDevelopersTutorial/blob/900ac9f0f4a15999914bec36bdd604bb6bd1ab4a/Query/4%20-%20Creating%20Tables%20-%20DataTypes/sqlserver_datatypes.md

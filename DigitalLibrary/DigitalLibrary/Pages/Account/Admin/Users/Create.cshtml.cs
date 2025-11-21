@@ -26,6 +26,7 @@ namespace DigitalLibrary.Pages.Account.Admin.Users
         {
             UserDto = new()
             {
+<<<<<<< Updated upstream
                 UserRoles = new SelectList
                 (
 
@@ -36,6 +37,18 @@ namespace DigitalLibrary.Pages.Account.Admin.Users
                     }
                     , "Id", "Title"
                 )
+=======
+                UserRoles = new SelectList(
+                new[]
+                {
+                    new { Id = 1, Title = "Admin" },
+                    new { Id = 2, Title = "User" }
+                },
+                "Id",
+                "Title",
+                UserDto.RoleId
+                 );
+>>>>>>> Stashed changes
             };
         }
         public async Task<IActionResult> OnPost()
