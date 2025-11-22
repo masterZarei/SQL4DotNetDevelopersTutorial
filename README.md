@@ -5,7 +5,7 @@
 
 ## برای  [مشاهده دوره](https://toplearn.com/c/6275) کلیک کنید
 
-این ریپازیتوری شامل تمامی فایل‌های تمرینی، اسکریپت‌ها، Stored Procedures، و پروژه‌ی کامل **Digital Library** است؛ پروژه‌ای که طی آموزش قدم‌به‌قدم ساخته می‌شود و توسعه‌دهندگان ASP.NET Core را وارد سطح بالاتری از مهارت دیتابیس می‌کند.
+این ریپازیتوری شامل تمامی فایل‌های تمرینی، اسکریپت‌ها، Stored Procedures، و پروژه‌ی کامل **Digital Library** است؛ پروژه‌ای که توسعه‌دهندگان ASP.NET Core را وارد سطح بالاتری از مهارت دیتابیس می‌کند.
 
 ---
 
@@ -52,8 +52,8 @@ SQL4DotNetDevelopersTutorial/
 
 * Tables: Categories, Roles, Users, Books, DownloadedBooks
 * روابط و کلیدهای اصلی و خارجی
-* Index‌گذاری اصولی
-* امنیت و Encryption
+* استفاده از ADO.Net 
+* ایجاد ابزارهای تعامل با دیتابیس از صفر
 
 ### ✔ Stored Procedures کامل
 
