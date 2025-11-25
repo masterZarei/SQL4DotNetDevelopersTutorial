@@ -4,7 +4,7 @@
 **A complete hands-on SQL Server course + Digital Library project**
 
 ## برای  [مشاهده دوره](https://toplearn.com/c/6275) کلیک کنید
-### برای ذخیره دوره در بخش Stars گیت هاب خود روی Star ⭐ کلیک کنید
+### برای ذخیره دوره در بخش Stars گیت هاب خود روی Star ⭐این ریپو کلیک کنید
 این ریپازیتوری شامل تمامی فایل‌های تمرینی، اسکریپت‌ها، Stored Procedures، و پروژه‌ی کامل **Digital Library** است؛ پروژه‌ای که توسعه‌دهندگان ASP.NET Core را وارد سطح بالاتری از مهارت دیتابیس می‌کند.
 
 ---
