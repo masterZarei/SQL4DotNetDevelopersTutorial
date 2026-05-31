@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6BB62390-F494-8505-E68F-610138E8412C}|CompanyManagement\\CompanyManagement.csproj|f:\\toturials\\sql4dotnetdeveloperstutorial\\companymanagement\\companymanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BB62390-F494-8505-E68F-610138E8412C}|CompanyManagement\\CompanyManagement.csproj|solutionrelative:companymanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BB62390-F494-8505-E68F-610138E8412C}|CompanyManagement\\CompanyManagement.csproj|f:\\toturials\\sql4dotnetdeveloperstutorial\\companymanagement\\companymanagement\\repositories\\companyrepositoryef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BB62390-F494-8505-E68F-610138E8412C}|CompanyManagement\\CompanyManagement.csproj|solutionrelative:companymanagement\\repositories\\companyrepositoryef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BB62390-F494-8505-E68F-610138E8412C}|CompanyManagement\\CompanyManagement.csproj|f:\\toturials\\sql4dotnetdeveloperstutorial\\companymanagement\\companymanagement\\repositories\\icompanyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BB62390-F494-8505-E68F-610138E8412C}|CompanyManagement\\CompanyManagement.csproj|solutionrelative:companymanagement\\repositories\\icompanyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +22,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Program.cs",
+              "RelativeDocumentMoniker": "CompanyManagement\\Program.cs",
+              "ToolTip": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Program.cs",
+              "RelativeToolTip": "CompanyManagement\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T10:04:13.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CompanyRepositoryEF.cs",
+              "DocumentMoniker": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Repositories\\CompanyRepositoryEF.cs",
+              "RelativeDocumentMoniker": "CompanyManagement\\Repositories\\CompanyRepositoryEF.cs",
+              "ToolTip": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Repositories\\CompanyRepositoryEF.cs",
+              "RelativeToolTip": "CompanyManagement\\Repositories\\CompanyRepositoryEF.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T09:59:53.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ICompanyRepository.cs",
+              "DocumentMoniker": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Repositories\\ICompanyRepository.cs",
+              "RelativeDocumentMoniker": "CompanyManagement\\Repositories\\ICompanyRepository.cs",
+              "ToolTip": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Repositories\\ICompanyRepository.cs",
+              "RelativeToolTip": "CompanyManagement\\Repositories\\ICompanyRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T09:58:27.378Z",
+              "EditorCaption": ""
             }
           ]
         }
