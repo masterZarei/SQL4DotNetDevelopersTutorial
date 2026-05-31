@@ -31,6 +31,26 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
+[F:/Toturials/SQL4DotNetDevelopersTutorial/CompanyManagement/CompanyManagement/Pages/Admin/CompanyPages/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ29tcGFueVBhZ2VzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Toturials/SQL4DotNetDevelopersTutorial/CompanyManagement/CompanyManagement/Pages/Admin/CompanyPages/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ29tcGFueVBhZ2VzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Toturials/SQL4DotNetDevelopersTutorial/CompanyManagement/CompanyManagement/Pages/Admin/CompanyPages/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ29tcGFueVBhZ2VzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Toturials/SQL4DotNetDevelopersTutorial/CompanyManagement/CompanyManagement/Pages/Admin/CompanyPages/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ29tcGFueVBhZ2VzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Toturials/SQL4DotNetDevelopersTutorial/CompanyManagement/CompanyManagement/Pages/Admin/CompanyPages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ29tcGFueVBhZ2VzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/Toturials/SQL4DotNetDevelopersTutorial/CompanyManagement/CompanyManagement/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
