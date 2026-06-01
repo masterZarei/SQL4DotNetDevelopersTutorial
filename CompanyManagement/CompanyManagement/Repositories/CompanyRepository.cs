@@ -1,5 +1,6 @@
 ﻿using CompanyManagement.Data;
 using CompanyManagement.Models;
+using Dapper;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using System.Data;
@@ -8,7 +9,7 @@ namespace CompanyManagement.Repositories
 {
     public class CompanyRepository : ICompanyRepository
     {
-      
+
         private IDbConnection _db;
         public CompanyRepository(IConfiguration configuration)
         {
@@ -21,20 +22,21 @@ namespace CompanyManagement.Repositories
 
         public async Task<Company> Find(int id)
         {
-            throw new NotImplementedException();
+            return _db.Query<Company>("sp_GetCompany", new { Id = id },
+                commandType: CommandType.StoredProcedure).SingleOrDefault();
 
         }
 
         public async Task<List<Company>> GetAll()
         {
-            throw new NotImplementedException();
+            return [.. _db.Query<Company>("sp_GetAllCompanies",
+                 commandType: CommandType.StoredProcedure)];
 
         }
 
         public async Task Remove(int id)
         {
-            throw new NotImplementedException();
-
+            _db.Execute("sp_RemoveCompany", new { Id = id }, commandType: CommandType.StoredProcedure);
         }
 
         public async Task<Company> Update(Company company)
