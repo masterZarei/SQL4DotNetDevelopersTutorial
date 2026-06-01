@@ -31,7 +31,7 @@ namespace CompanyManagement.Repositories
 
         public async Task Remove(int id)
         {
-            var company = Find(id);
+            var company = await Find(id);
             if (company is not null)
             {
                 _context.Remove(company);

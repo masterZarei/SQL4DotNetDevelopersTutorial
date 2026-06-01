@@ -1,18 +1,17 @@
+using CompanyManagement.Models;
+using CompanyManagement.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.EntityFrameworkCore;
-using CompanyManagement.Models;
-using CompanyManagement.Data;
 
 namespace CompanyManagement.Pages.Admin.CompanyPages;
 
 public class CreateModel : PageModel
 {
-    private readonly AppDbContext _context;
+    private readonly ICompanyRepository _repo;
 
-    public CreateModel(AppDbContext context)
+    public CreateModel(ICompanyRepository repo)
     {
-        _context = context;
+        _repo = repo;
     }
 
     public IActionResult OnGet()
@@ -31,8 +30,7 @@ public class CreateModel : PageModel
             return Page();
         }
 
-        _context.Companies.Add(Company);
-        await _context.SaveChangesAsync();
+        await _repo.Add(Company);
 
         return RedirectToPage("./Index");
     }

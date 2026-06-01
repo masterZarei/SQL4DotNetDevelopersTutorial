@@ -1,17 +1,17 @@
+using CompanyManagement.Models;
+using CompanyManagement.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.EntityFrameworkCore;
-using CompanyManagement.Models;
-using CompanyManagement.Data;
 
 namespace CompanyManagement.Pages.Admin.CompanyPages;
 
 public class DetailsModel : PageModel
 {
-    private readonly AppDbContext _context;
-    public DetailsModel(AppDbContext context)
+    private readonly ICompanyRepository _repo;
+
+    public DetailsModel(ICompanyRepository repo)
     {
-        _context = context;
+        _repo = repo;
     }
 
     public Company Company { get; set; } = default!;
@@ -23,7 +23,7 @@ public class DetailsModel : PageModel
             return NotFound();
         }
 
-        var company = await _context.Companies.FirstOrDefaultAsync(m => m.Id == id);
+        var company = await _repo.Find(id.GetValueOrDefault());
         if (company is null)
         {
             return NotFound();

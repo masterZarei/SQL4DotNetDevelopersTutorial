@@ -1,18 +1,17 @@
+using CompanyManagement.Models;
+using CompanyManagement.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.EntityFrameworkCore;
-using CompanyManagement.Models;
-using CompanyManagement.Data;
 
 namespace CompanyManagement.Pages.Admin.CompanyPages;
 
 public class DeleteModel : PageModel
 {
-    private readonly AppDbContext _context;
+    private readonly ICompanyRepository _repo;
 
-    public DeleteModel(AppDbContext context)
+    public DeleteModel(ICompanyRepository repo)
     {
-        _context = context;
+        _repo = repo;
     }
 
     [BindProperty]
@@ -25,7 +24,7 @@ public class DeleteModel : PageModel
             return NotFound();
         }
 
-        var company = await _context.Companies.FirstOrDefaultAsync(m => m.Id == id);
+        var company = await _repo.Find(id.GetValueOrDefault());
         if (company is null)
         {
             return NotFound();
@@ -45,13 +44,7 @@ public class DeleteModel : PageModel
             return NotFound();
         }
 
-        var company = await _context.Companies.FindAsync(id);
-        if (company != null)
-        {
-            Company = company;
-            _context.Companies.Remove(Company);
-            await _context.SaveChangesAsync();
-        }
+        await _repo.Remove(id.GetValueOrDefault());
 
         return RedirectToPage("./Index");
     }

@@ -1,24 +1,22 @@
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.EntityFrameworkCore;
 using CompanyManagement.Models;
-using CompanyManagement.Data;
+using CompanyManagement.Repositories;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace CompanyManagement.Pages.Admin.CompanyPages;
 
 public class IndexModel : PageModel
 {
-    private readonly AppDbContext _context;
+    private readonly ICompanyRepository _repo;
 
-    public IndexModel(AppDbContext context)
+    public IndexModel(ICompanyRepository repo)
     {
-        _context = context;
+        _repo = repo;
     }
 
     public IList<Company> Company { get; set; } = default!;
 
     public async Task OnGetAsync()
     {
-        Company = await _context.Companies.ToListAsync();
+        Company = await _repo.GetAll();
     }
 }

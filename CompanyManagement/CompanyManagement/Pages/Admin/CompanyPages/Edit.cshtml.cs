@@ -1,18 +1,17 @@
+using CompanyManagement.Models;
+using CompanyManagement.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.EntityFrameworkCore;
-using CompanyManagement.Models;
-using CompanyManagement.Data;
 
 namespace CompanyManagement.Pages.Admin.CompanyPages;
 
 public class EditModel : PageModel
 {
-    private readonly AppDbContext _context;
+    private readonly ICompanyRepository _repo;
 
-    public EditModel(AppDbContext context)
+    public EditModel(ICompanyRepository repo)
     {
-        _context = context;
+        _repo = repo;
     }
 
     [BindProperty]
@@ -25,7 +24,7 @@ public class EditModel : PageModel
             return NotFound();
         }
 
-        var company = await _context.Companies.FirstOrDefaultAsync(m => m.Id == id);
+        var company = await _repo.Find(id.GetValueOrDefault());
         if (company is null)
         {
             return NotFound();
@@ -43,29 +42,8 @@ public class EditModel : PageModel
             return Page();
         }
 
-        _context.Attach(Company).State = EntityState.Modified;
-
-        try
-        {
-            await _context.SaveChangesAsync();
-        }
-        catch (DbUpdateConcurrencyException)
-        {
-            if (!CompanyExists(Company.Id))
-            {
-                return NotFound();
-            }
-            else
-            {
-                throw;
-            }
-        }
+        await _repo.Update(Company);
 
         return RedirectToPage("./Index");
-    }
-
-    private bool CompanyExists(int id)
-    {
-        return _context.Companies.Any(e => e.Id == id);
     }
 }
