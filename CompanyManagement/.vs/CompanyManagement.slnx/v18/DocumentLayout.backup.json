@@ -18,8 +18,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -28,9 +32,9 @@
               "RelativeDocumentMoniker": "CompanyManagement\\Program.cs",
               "ToolTip": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Program.cs",
               "RelativeToolTip": "CompanyManagement\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-01T17:58:35.837Z",
+              "WhenOpened": "2026-06-01T18:58:37.596Z",
               "EditorCaption": ""
             },
             {
@@ -39,16 +43,12 @@
               "Title": "CompanyRepository.cs",
               "DocumentMoniker": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Repositories\\CompanyRepository.cs",
               "RelativeDocumentMoniker": "CompanyManagement\\Repositories\\CompanyRepository.cs",
-              "ToolTip": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Repositories\\CompanyRepository.cs",
-              "RelativeToolTip": "CompanyManagement\\Repositories\\CompanyRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "ToolTip": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Repositories\\CompanyRepository.cs*",
+              "RelativeToolTip": "CompanyManagement\\Repositories\\CompanyRepository.cs*",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAADEAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-01T17:56:48.023Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }

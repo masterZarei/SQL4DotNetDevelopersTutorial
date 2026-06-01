@@ -6,9 +6,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("ComapnyConnection"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("CompanyConnection"));
 });
-builder.Services.AddScoped<ICompanyRepository, CompanyRepositoryEF>();
+//builder.Services.AddScoped<ICompanyRepository, CompanyRepositoryEF>();
+builder.Services.AddScoped<ICompanyRepository, CompanyRepository>();
 // Add services to the container.
 builder.Services.AddRazorPages();
 

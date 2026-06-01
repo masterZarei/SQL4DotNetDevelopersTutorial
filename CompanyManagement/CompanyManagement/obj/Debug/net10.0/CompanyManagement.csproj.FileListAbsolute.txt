@@ -224,3 +224,4 @@ F:\Toturials\SQL4DotNetDevelopersTutorial\CompanyManagement\CompanyManagement\bi
 F:\Toturials\SQL4DotNetDevelopersTutorial\CompanyManagement\CompanyManagement\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 F:\Toturials\SQL4DotNetDevelopersTutorial\CompanyManagement\CompanyManagement\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 F:\Toturials\SQL4DotNetDevelopersTutorial\CompanyManagement\CompanyManagement\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+F:\Toturials\SQL4DotNetDevelopersTutorial\CompanyManagement\CompanyManagement\bin\Debug\net10.0\Dapper.dll
