@@ -8,5 +8,7 @@
         public string State { get; set; }
         public string City { get; set; }
         public string PostalCode { get; set; }
+
+        public virtual List<Employee>? Employees { get; set; }
     }
 }
