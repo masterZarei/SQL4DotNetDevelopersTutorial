@@ -8,8 +8,8 @@ public class Employee
     public string Name { get; set; }
     public string Phone { get; set; }
     public string Title { get; set; }
-    public int CompanyId { get; set; }
 
+    public int CompanyId { get; set; }
     [ForeignKey(nameof(CompanyId))]
-    public virtual Company? Company { get; set; }
+    public virtual Company Company { get; set; }
 }

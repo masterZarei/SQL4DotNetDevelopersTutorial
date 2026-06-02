@@ -10,6 +10,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 });
 //builder.Services.AddScoped<ICompanyRepository, CompanyRepositoryEF>();
 builder.Services.AddScoped<ICompanyRepository, CompanyRepository>();
+builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 // Add services to the container.
 builder.Services.AddRazorPages();
 

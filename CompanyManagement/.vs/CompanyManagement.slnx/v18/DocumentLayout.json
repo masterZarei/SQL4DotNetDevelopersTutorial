@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6BB62390-F494-8505-E68F-610138E8412C}|CompanyManagement\\CompanyManagement.csproj|f:\\toturials\\sql4dotnetdeveloperstutorial\\companymanagement\\companymanagement\\repositories\\companyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BB62390-F494-8505-E68F-610138E8412C}|CompanyManagement\\CompanyManagement.csproj|solutionrelative:companymanagement\\repositories\\companyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6BB62390-F494-8505-E68F-610138E8412C}|CompanyManagement\\CompanyManagement.csproj|f:\\toturials\\sql4dotnetdeveloperstutorial\\companymanagement\\companymanagement\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BB62390-F494-8505-E68F-610138E8412C}|CompanyManagement\\CompanyManagement.csproj|solutionrelative:companymanagement\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6BB62390-F494-8505-E68F-610138E8412C}|CompanyManagement\\CompanyManagement.csproj|f:\\toturials\\sql4dotnetdeveloperstutorial\\companymanagement\\companymanagement\\repositories\\companyrepositoryef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BB62390-F494-8505-E68F-610138E8412C}|CompanyManagement\\CompanyManagement.csproj|solutionrelative:companymanagement\\repositories\\companyrepositoryef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6BB62390-F494-8505-E68F-610138E8412C}|CompanyManagement\\CompanyManagement.csproj|f:\\toturials\\sql4dotnetdeveloperstutorial\\companymanagement\\companymanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BB62390-F494-8505-E68F-610138E8412C}|CompanyManagement\\CompanyManagement.csproj|solutionrelative:companymanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BB62390-F494-8505-E68F-610138E8412C}|CompanyManagement\\CompanyManagement.csproj|f:\\toturials\\sql4dotnetdeveloperstutorial\\companymanagement\\companymanagement\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BB62390-F494-8505-E68F-610138E8412C}|CompanyManagement\\CompanyManagement.csproj|solutionrelative:companymanagement\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BB62390-F494-8505-E68F-610138E8412C}|CompanyManagement\\CompanyManagement.csproj|f:\\toturials\\sql4dotnetdeveloperstutorial\\companymanagement\\companymanagement\\repositories\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BB62390-F494-8505-E68F-610138E8412C}|CompanyManagement\\CompanyManagement.csproj|solutionrelative:companymanagement\\repositories\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6BB62390-F494-8505-E68F-610138E8412C}|CompanyManagement\\CompanyManagement.csproj|f:\\toturials\\sql4dotnetdeveloperstutorial\\companymanagement\\companymanagement\\repositories\\icompanyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,50 +30,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Program.cs",
+              "RelativeDocumentMoniker": "CompanyManagement\\Program.cs",
+              "ToolTip": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Program.cs",
+              "RelativeToolTip": "CompanyManagement\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T02:21:06.627Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "CompanyManagement\\Models\\Employee.cs",
+              "ToolTip": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Models\\Employee.cs",
+              "RelativeToolTip": "CompanyManagement\\Models\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T02:10:01.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmployeeRepository.cs",
+              "DocumentMoniker": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Repositories\\EmployeeRepository.cs",
+              "RelativeDocumentMoniker": "CompanyManagement\\Repositories\\EmployeeRepository.cs",
+              "ToolTip": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Repositories\\EmployeeRepository.cs",
+              "RelativeToolTip": "CompanyManagement\\Repositories\\EmployeeRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABAAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T02:08:01.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ICompanyRepository.cs",
               "DocumentMoniker": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Repositories\\ICompanyRepository.cs",
               "RelativeDocumentMoniker": "CompanyManagement\\Repositories\\ICompanyRepository.cs",
               "ToolTip": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Repositories\\ICompanyRepository.cs",
               "RelativeToolTip": "CompanyManagement\\Repositories\\ICompanyRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T01:50:24.234Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-02T02:07:26.438Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CompanyRepository.cs",
-              "DocumentMoniker": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Repositories\\CompanyRepository.cs",
-              "RelativeDocumentMoniker": "CompanyManagement\\Repositories\\CompanyRepository.cs",
-              "ToolTip": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Repositories\\CompanyRepository.cs",
-              "RelativeToolTip": "CompanyManagement\\Repositories\\CompanyRepository.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAEAAAAABAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "IEmployeeRepository.cs",
+              "DocumentMoniker": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Repositories\\IEmployeeRepository.cs",
+              "RelativeDocumentMoniker": "CompanyManagement\\Repositories\\IEmployeeRepository.cs",
+              "ToolTip": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Repositories\\IEmployeeRepository.cs",
+              "RelativeToolTip": "CompanyManagement\\Repositories\\IEmployeeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T01:31:28.066Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CompanyRepositoryEF.cs",
-              "DocumentMoniker": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Repositories\\CompanyRepositoryEF.cs",
-              "RelativeDocumentMoniker": "CompanyManagement\\Repositories\\CompanyRepositoryEF.cs",
-              "ToolTip": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Repositories\\CompanyRepositoryEF.cs",
-              "RelativeToolTip": "CompanyManagement\\Repositories\\CompanyRepositoryEF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T01:31:24.975Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "WhenOpened": "2026-06-02T02:07:24.881Z"
             }
           ]
         }

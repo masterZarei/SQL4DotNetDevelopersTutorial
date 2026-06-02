@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CompanyManagement.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260602012903_mig_AddedEmployeesTable")]
-    partial class mig_AddedEmployeesTable
+    [Migration("20260602020431_mig_InitDb")]
+    partial class mig_InitDb
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
