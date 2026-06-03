@@ -1,5 +1,4 @@
-﻿using CompanyManagement.Data;
-using CompanyManagement.Models;
+﻿using CompanyManagement.Models;
 using Dapper;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
@@ -31,8 +30,8 @@ namespace CompanyManagement.Repositories
 
         public async Task<Company> Find(int id)
         {
-            return (await _db.QueryAsync<Company>("sp_GetCompany",new {Id = id}
-            ,commandType: CommandType.StoredProcedure)).SingleOrDefault();
+            return (await _db.QueryAsync<Company>("sp_GetCompany", new { Id = id }
+            , commandType: CommandType.StoredProcedure)).SingleOrDefault();
 
         }
 

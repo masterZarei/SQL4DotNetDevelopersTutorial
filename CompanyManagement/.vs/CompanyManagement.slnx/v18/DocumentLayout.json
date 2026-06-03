@@ -3,6 +3,34 @@
   "WorkspaceRootPath": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6BB62390-F494-8505-E68F-610138E8412C}|CompanyManagement\\CompanyManagement.csproj|f:\\toturials\\sql4dotnetdeveloperstutorial\\companymanagement\\companymanagement\\pages\\admin\\employeepages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BB62390-F494-8505-E68F-610138E8412C}|CompanyManagement\\CompanyManagement.csproj|solutionrelative:companymanagement\\pages\\admin\\employeepages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BB62390-F494-8505-E68F-610138E8412C}|CompanyManagement\\CompanyManagement.csproj|f:\\toturials\\sql4dotnetdeveloperstutorial\\companymanagement\\companymanagement\\pages\\admin\\employeepages\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BB62390-F494-8505-E68F-610138E8412C}|CompanyManagement\\CompanyManagement.csproj|solutionrelative:companymanagement\\pages\\admin\\employeepages\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BB62390-F494-8505-E68F-610138E8412C}|CompanyManagement\\CompanyManagement.csproj|f:\\toturials\\sql4dotnetdeveloperstutorial\\companymanagement\\companymanagement\\pages\\admin\\employeepages\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BB62390-F494-8505-E68F-610138E8412C}|CompanyManagement\\CompanyManagement.csproj|solutionrelative:companymanagement\\pages\\admin\\employeepages\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BB62390-F494-8505-E68F-610138E8412C}|CompanyManagement\\CompanyManagement.csproj|f:\\toturials\\sql4dotnetdeveloperstutorial\\companymanagement\\companymanagement\\pages\\admin\\employeepages\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BB62390-F494-8505-E68F-610138E8412C}|CompanyManagement\\CompanyManagement.csproj|solutionrelative:companymanagement\\pages\\admin\\employeepages\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BB62390-F494-8505-E68F-610138E8412C}|CompanyManagement\\CompanyManagement.csproj|f:\\toturials\\sql4dotnetdeveloperstutorial\\companymanagement\\companymanagement\\pages\\admin\\employeepages\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BB62390-F494-8505-E68F-610138E8412C}|CompanyManagement\\CompanyManagement.csproj|solutionrelative:companymanagement\\pages\\admin\\employeepages\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BB62390-F494-8505-E68F-610138E8412C}|CompanyManagement\\CompanyManagement.csproj|f:\\toturials\\sql4dotnetdeveloperstutorial\\companymanagement\\companymanagement\\pages\\admin\\employeepages\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6BB62390-F494-8505-E68F-610138E8412C}|CompanyManagement\\CompanyManagement.csproj|solutionrelative:companymanagement\\pages\\admin\\employeepages\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BB62390-F494-8505-E68F-610138E8412C}|CompanyManagement\\CompanyManagement.csproj|f:\\toturials\\sql4dotnetdeveloperstutorial\\companymanagement\\companymanagement\\pages\\admin\\employeepages\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6BB62390-F494-8505-E68F-610138E8412C}|CompanyManagement\\CompanyManagement.csproj|solutionrelative:companymanagement\\pages\\admin\\employeepages\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6BB62390-F494-8505-E68F-610138E8412C}|CompanyManagement\\CompanyManagement.csproj|f:\\toturials\\sql4dotnetdeveloperstutorial\\companymanagement\\companymanagement\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6BB62390-F494-8505-E68F-610138E8412C}|CompanyManagement\\CompanyManagement.csproj|solutionrelative:companymanagement\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -30,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,7 +66,98 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Pages\\Admin\\EmployeePages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "CompanyManagement\\Pages\\Admin\\EmployeePages\\Index.cshtml.cs",
+              "ToolTip": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Pages\\Admin\\EmployeePages\\Index.cshtml.cs",
+              "RelativeToolTip": "CompanyManagement\\Pages\\Admin\\EmployeePages\\Index.cshtml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAmwAoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T09:18:24.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Pages\\Admin\\EmployeePages\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "CompanyManagement\\Pages\\Admin\\EmployeePages\\Edit.cshtml.cs",
+              "ToolTip": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Pages\\Admin\\EmployeePages\\Edit.cshtml.cs",
+              "RelativeToolTip": "CompanyManagement\\Pages\\Admin\\EmployeePages\\Edit.cshtml.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAC8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T09:17:37.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Pages\\Admin\\EmployeePages\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "CompanyManagement\\Pages\\Admin\\EmployeePages\\Create.cshtml.cs",
+              "ToolTip": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Pages\\Admin\\EmployeePages\\Create.cshtml.cs",
+              "RelativeToolTip": "CompanyManagement\\Pages\\Admin\\EmployeePages\\Create.cshtml.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAACAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T09:05:13.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Details.cshtml.cs",
+              "DocumentMoniker": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Pages\\Admin\\EmployeePages\\Details.cshtml.cs",
+              "RelativeDocumentMoniker": "CompanyManagement\\Pages\\Admin\\EmployeePages\\Details.cshtml.cs",
+              "ToolTip": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Pages\\Admin\\EmployeePages\\Details.cshtml.cs",
+              "RelativeToolTip": "CompanyManagement\\Pages\\Admin\\EmployeePages\\Details.cshtml.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwBkAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T09:04:33.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Delete.cshtml.cs",
+              "DocumentMoniker": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Pages\\Admin\\EmployeePages\\Delete.cshtml.cs",
+              "RelativeDocumentMoniker": "CompanyManagement\\Pages\\Admin\\EmployeePages\\Delete.cshtml.cs",
+              "ToolTip": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Pages\\Admin\\EmployeePages\\Delete.cshtml.cs",
+              "RelativeToolTip": "CompanyManagement\\Pages\\Admin\\EmployeePages\\Delete.cshtml.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAAC4AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T09:04:17.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Pages\\Admin\\EmployeePages\\Delete.cshtml",
+              "RelativeDocumentMoniker": "CompanyManagement\\Pages\\Admin\\EmployeePages\\Delete.cshtml",
+              "ToolTip": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Pages\\Admin\\EmployeePages\\Delete.cshtml",
+              "RelativeToolTip": "CompanyManagement\\Pages\\Admin\\EmployeePages\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-03T09:04:10.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Pages\\Admin\\EmployeePages\\Create.cshtml",
+              "RelativeDocumentMoniker": "CompanyManagement\\Pages\\Admin\\EmployeePages\\Create.cshtml",
+              "ToolTip": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Pages\\Admin\\EmployeePages\\Create.cshtml",
+              "RelativeToolTip": "CompanyManagement\\Pages\\Admin\\EmployeePages\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-03T09:03:29.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Program.cs",
               "RelativeDocumentMoniker": "CompanyManagement\\Program.cs",
@@ -50,7 +169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "Employee.cs",
               "DocumentMoniker": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Models\\Employee.cs",
               "RelativeDocumentMoniker": "CompanyManagement\\Models\\Employee.cs",
@@ -62,20 +181,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "EmployeeRepository.cs",
               "DocumentMoniker": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Repositories\\EmployeeRepository.cs",
               "RelativeDocumentMoniker": "CompanyManagement\\Repositories\\EmployeeRepository.cs",
               "ToolTip": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Repositories\\EmployeeRepository.cs",
               "RelativeToolTip": "CompanyManagement\\Repositories\\EmployeeRepository.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAABAAAABFAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-02T02:08:01.541Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "ICompanyRepository.cs",
               "DocumentMoniker": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Repositories\\ICompanyRepository.cs",
               "RelativeDocumentMoniker": "CompanyManagement\\Repositories\\ICompanyRepository.cs",
@@ -87,7 +206,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "IEmployeeRepository.cs",
               "DocumentMoniker": "F:\\Toturials\\SQL4DotNetDevelopersTutorial\\CompanyManagement\\CompanyManagement\\Repositories\\IEmployeeRepository.cs",
               "RelativeDocumentMoniker": "CompanyManagement\\Repositories\\IEmployeeRepository.cs",

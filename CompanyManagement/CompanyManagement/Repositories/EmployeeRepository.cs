@@ -14,7 +14,7 @@ public class EmployeeRepository : IEmployeeRepository
     }
     public async Task<Employee> Add(Employee employee)
     {
-        var sql = "INSERT INTO Employees (Name, Phone, Title, CompanyId) VALUES(@Name, @Phone, @Title, @CompanyId);"+
+        var sql = "INSERT INTO Employees (Name, Phone, Title, CompanyId) VALUES(@Name, @Phone, @Title, @CompanyId);" +
             "SELECT CAST(SCOPE_IDENTITY() as int)";
         var id = (await _db.QueryAsync<int>(sql, employee)).SingleOrDefault();
         employee.Id = id;
@@ -26,7 +26,7 @@ public class EmployeeRepository : IEmployeeRepository
     {
 
         var sql = "SELECT * FROM Employees WHERE Id=@Id";
-        return (await _db.QueryAsync<Employee>(sql,new {Id = id})).SingleOrDefault();
+        return (await _db.QueryAsync<Employee>(sql, new { Id = id })).SingleOrDefault();
     }
 
     public async Task<List<Employee>> GetAll()
@@ -39,13 +39,13 @@ public class EmployeeRepository : IEmployeeRepository
     public async Task Remove(int id)
     {
         var sql = "DELETE FROM Employees WHERE Id=@Id";
-        await _db.ExecuteAsync(sql, new {Id =  id});
+        await _db.ExecuteAsync(sql, new { Id = id });
     }
 
     public async Task<Employee> Update(Employee employee)
     {
         var sql = "UPDATE Employees SET Name=@Name, Title=@Title, Phone=@Phone, CompanyId=@CompanyId WHERE Id=@Id";
-        await _db.ExecuteAsync(sql,employee);
+        await _db.ExecuteAsync(sql, employee);
         return employee;
     }
 }
